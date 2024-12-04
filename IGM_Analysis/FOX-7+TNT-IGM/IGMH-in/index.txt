@@ -1,0 +1,16 @@
+Info) picked atom:
+Info) ------------
+Info) molecule id: 0
+Info) trajectory frame: 1
+Info) name: C
+Info) type: C
+Info) index: 1746
+Info) residue: 83
+Info) resname:
+Info) resid: 1
+Info) chain: X
+Info) segname:
+Info) x: 46.543999
+Info) y: 50.827999
+Info) z: 39.627998
+Info) User Pick: mol0 atom:1746

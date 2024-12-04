@@ -1,0 +1,979 @@
+%\documentclass{article}
+%\usepackage[version=3]{mhchem}
+%\usepackage{longtable}
+%\begin{document}
+\begin{longtable}{c|lc}
+ ID & Reaction & Total Flux \\ \hline
+ 0 & \ce{CHN} + \ce{CO} $\to$ \ce{C2HNO} & 0 \\
+ 1 & \ce{C2N2} + \ce{NO} $\to$ \ce{C2N3O} & 2 \\
+ 2 & \ce{C3N3} + \ce{C2H3N4O3} $\to$ \ce{C5H3N7O3} & 1 \\
+ 3 & \ce{C2N2O} $\to$ \ce{CN} + \ce{CNO} & 2 \\
+ 4 & \ce{N2} + \ce{C2HN3O} $\to$ \ce{HN2} + \ce{C2N3O} & 1 \\
+ 5 & \ce{H3N} + \ce{C2H2N3O} $\to$ \ce{C2H3N3O} + \ce{H2N} & 1 \\
+ 6 & \ce{H3N} + \ce{H2N} $\to$ \ce{H4N2} + \ce{H} & 0 \\
+ 7 & \ce{H3N} + \ce{HN} $\to$ \ce{H4N2} & 1 \\
+ 8 & \ce{H3N} + \ce{C2H2N3O} $\to$ \ce{H2N} + \ce{H2N} + \ce{C2HN2O} & 1 \\
+ 9 & \ce{H3N} + \ce{C2H3N3O2} $\to$ \ce{H4N2} + \ce{C2H2N2O2} & 1 \\
+ 10 & \ce{H3N} + \ce{HO} $\to$ \ce{H2O} + \ce{H2N} & 2 \\
+ 11 & \ce{H3N} + \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2H4N4O4} & 1 \\
+ 12 & \ce{H3N} + \ce{C2H2N4O4} $\to$ \ce{H2N} + \ce{C2H3N4O4} & 1 \\
+ 13 & \ce{H3N} + \ce{C2N3O4} $\to$ \ce{H2N} + \ce{C2HN3O4} & 1 \\
+ 14 & \ce{H3N} + \ce{C2HN2O2} $\to$ \ce{C2H2N} + \ce{H2N} + \ce{NO2} & 1 \\
+ 15 & \ce{H3N} + \ce{HN2O} $\to$ \ce{H2N2O} + \ce{H2N} & 0 \\
+ 16 & \ce{C5H3N6O} $\to$ \ce{C3N3} + \ce{C2H3N3O} & 1 \\
+ 17 & \ce{C2H4N4O} $\to$ \ce{H2N2} + \ce{C2H2N2O} & 1 \\
+ 18 & \ce{C4H3N5O2} $\to$ \ce{C4H3N5O2} & 1 \\
+ 19 & \ce{C2H3N2O3} $\to$ \ce{C2H3N2O3} & 1 \\
+ 20 & \ce{C2H4N4O} $\to$ \ce{C2H4N4O} & 1 \\
+ 21 & \ce{C2H3N3O3} $\to$ \ce{C2H3N2O} + \ce{NO2} & 1 \\
+ 22 & \ce{C4H4N5O6} $\to$ \ce{C2H3N2O} + \ce{C2HN3O5} & 1 \\
+ 23 & \ce{C2H3N2O2} + \ce{C2H3N4O4} $\to$ \ce{C2H3N2O} + \ce{C2H3N4O5} & 1 \\
+ 24 & \ce{C2H3N2O2} $\to$ \ce{C2H3N2O2} & 1 \\
+ 25 & \ce{C2H2N4O3} $\to$ \ce{C2N3O3} + \ce{H2N} & 1 \\
+ 26 & \ce{C2H2N3O3} $\to$ \ce{C2H2N2O} + \ce{NO2} & 1 \\
+ 27 & \ce{C2H3N2O3} $\to$ \ce{C2H3NO} + \ce{NO2} & 1 \\
+ 28 & \ce{C2H3N3O4} + \ce{C2H3N4O4} $\to$ \ce{C2H2N3O4} + \ce{C2H4N4O4} & 1 \\
+ 29 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN2O2} & 1 \\
+ 30 & \ce{C2H4N2} $\to$ \ce{C2H4N2} & 1 \\
+ 31 & \ce{C2H4N2} $\to$ \ce{H2} + \ce{C2H2N2} & 1 \\
+ 32 & \ce{C2H2N2O} + \ce{NO2} $\to$ \ce{C2HN2O} + \ce{HNO2} & 1 \\
+ 33 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 0 \\
+ 34 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 1 \\
+ 35 & \ce{C2H3N2O2} $\to$ \ce{C2H2N2O} + \ce{HO} & 1 \\
+ 36 & \ce{C2H3N2O2} $\to$ \ce{C2H3N2O2} & 1 \\
+ 37 & \ce{C2H2N2O2} + \ce{H3N2} $\to$ \ce{H2N2} + \ce{C2H3N2O2} & 1 \\
+ 38 & \ce{C2H2N2O2} + \ce{H2NO} $\to$ \ce{C2H4N3O3} & 1 \\
+ 39 & \ce{C2H2N2O2} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2HN2O2} & 1 \\
+ 40 & \ce{C2H2N2O2} + \ce{H2N} $\to$ \ce{C2H4N2} + \ce{NO2} & 2 \\
+ 41 & \ce{C2H2N2O2} + \ce{H2N} $\to$ \ce{C2H4N3O2} & 1 \\
+ 42 & \ce{C2H2N2O2} + \ce{H2N} $\to$ \ce{H2} + \ce{C2H2N3O2} & 1 \\
+ 43 & \ce{C2H2N2O2} + \ce{C2H2N3O} $\to$ \ce{C2H3N3O} + \ce{C2HN2O2} & 1 \\
+ 44 & \ce{C2H2N2O2} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN2O2} & 2 \\
+ 45 & \ce{C2H2N2O2} + \ce{C2H3N3O2} $\to$ \ce{C2H4N3O2} + \ce{C2HN2O2} & 1 \\
+ 46 & \ce{C2H2N2O2} + \ce{C2H4N4O4} $\to$ \ce{C2H3N2O2} + \ce{C2H3N4O4} & 1 \\
+ 47 & \ce{C2H2N2O2} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2HN2O2} & 1 \\
+ 48 & \ce{C2H2N2O2} + \ce{C2HN3O4} $\to$ \ce{C2H2N3O4} + \ce{C2HN2O2} & 1 \\
+ 49 & \ce{C2H2N2O2} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2HN2O2} & 1 \\
+ 50 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN} + \ce{NO2} & 1 \\
+ 51 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN2O2} & 4 \\
+ 52 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{H2} + \ce{C2N3O4} & 0 \\
+ 53 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 1 \\
+ 54 & \ce{C2H2N2O2} $\to$ \ce{C2H2N} + \ce{NO2} & 2 \\
+ 55 & \ce{C2H2N2O2} $\to$ \ce{H} + \ce{C2HN2O2} & 2 \\
+ 56 & \ce{C2H2N2O2} $\to$ \ce{H2} + \ce{C2N2O2} & 1 \\
+ 57 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 2 \\
+ 58 & \ce{C2HN3O2} $\to$ \ce{C2HN3O2} & 1 \\
+ 59 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 2 \\
+ 60 & \ce{C4H4N7O8} $\to$ \ce{C2HN3O3} + \ce{C2H3N4O5} & 1 \\
+ 61 & \ce{C2HN2O} + \ce{C2H2N} + \ce{NO2} $\to$ \ce{C2H3N2O2} + \ce{C2N2O} & 1 \\
+ 62 & \ce{C2HN2O} + \ce{C2H4N3O} $\to$ \ce{C2H3N3O} + \ce{C2H2N2O} & 1 \\
+ 63 & \ce{C2HN2O} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2N2O} & 1 \\
+ 64 & \ce{C2HN2O} + \ce{NO2} $\to$ \ce{C2N2O} + \ce{HNO2} & 1 \\
+ 65 & \ce{C2HN2O} $\to$ \ce{C2HN2O} & 1 \\
+ 66 & \ce{C2HN2O} $\to$ \ce{C2HN2O} & 0 \\
+ 67 & \ce{C2H2N2} + \ce{NO2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 68 & \ce{C2HNO} + \ce{H2N} $\to$ \ce{C2H3N2O} & 1 \\
+ 69 & \ce{C2HNO} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2NO} & 1 \\
+ 70 & \ce{C2HNO} $\to$ \ce{C2HNO} & 2 \\
+ 71 & \ce{CH2N2} + \ce{C2HN2O2} $\to$ \ce{CHN2} + \ce{C2H2N2O2} & 1 \\
+ 72 & \ce{CH2N2} $\to$ \ce{CH2N2} & 1 \\
+ 73 & \ce{CHN2} + \ce{CHN2O3} $\to$ \ce{HO} + \ce{C2HN4O2} & 1 \\
+ 74 & \ce{C2H2N2O2} $\to$ \ce{C2H2NO} + \ce{NO} & 1 \\
+ 75 & \ce{C2H3N3O4} $\to$ \ce{C2H3N3O4} & 0 \\
+ 76 & \ce{C2H3N3O4} $\to$ \ce{C2H2N3O3} + \ce{HO} & 1 \\
+ 77 & \ce{C2H2N3O4} + \ce{C2H4N4O4} $\to$ \ce{C2H3N3O4} + \ce{C2H3N4O4} & 1 \\
+ 78 & \ce{C2H2N3O3} $\to$ \ce{C2H2N2O} + \ce{NO2} & 1 \\
+ 79 & \ce{H2N2} + \ce{C2H2N4O3} $\to$ \ce{HN2} + \ce{C2H3N4O3} & 1 \\
+ 80 & \ce{H2N2} + \ce{H} $\to$ \ce{HN2} + \ce{H2} & 1 \\
+ 81 & \ce{C2H3N5O3} $\to$ \ce{C2H3N4O} + \ce{NO2} & 1 \\
+ 82 & \ce{C2H2N4O4} + \ce{H2} $\to$ \ce{H3N} + \ce{C2HN3O4} & 1 \\
+ 83 & \ce{H2N2} $\to$ \ce{N2} + \ce{H2} & 1 \\
+ 84 & \ce{C2H2N2} $\to$ \ce{C2H} + \ce{HN2} & 1 \\
+ 85 & \ce{C2H2N3O} $\to$ \ce{C2HNO} + \ce{HN2} & 1 \\
+ 86 & \ce{C2H2N4O4} $\to$ \ce{HN2} + \ce{C2HN2O4} & 1 \\
+ 87 & \ce{HNO} + \ce{C2H2N3O} $\to$ \ce{C2H3N4O2} & 1 \\
+ 88 & \ce{HNO} + \ce{H} $\to$ \ce{H2} + \ce{NO} & 1 \\
+ 89 & \ce{HNO} + \ce{O} $\to$ \ce{HNO2} & 1 \\
+ 90 & \ce{C2HN2O3} + \ce{NO2} $\to$ \ce{C2HN3O5} & 1 \\
+ 91 & \ce{C2HN2O3} $\to$ \ce{C2HNO} + \ce{NO2} & 2 \\
+ 92 & \ce{C2H3N3O5} $\to$ \ce{C2H3N3O5} & 1 \\
+ 93 & \ce{C2H3N4O4} + \ce{C2HN3O4} $\to$ \ce{C4H4N7O8} & 1 \\
+ 94 & \ce{C2H3N4O4} $\to$ \ce{C2H3N3O2} + \ce{NO2} & 1 \\
+ 95 & \ce{C2HN3O5} $\to$ \ce{C2HN2O3} + \ce{NO2} & 1 \\
+ 96 & \ce{C2HN3O5} $\to$ \ce{C2HN3O5} & 1 \\
+ 97 & \ce{C2H2N3O4} $\to$ \ce{C2H2N2O2} + \ce{NO2} & 1 \\
+ 98 & \ce{C2HN3O3} $\to$ \ce{C2HN2O} + \ce{NO2} & 2 \\
+ 99 & \ce{HN2} + \ce{C2H2N3O5} + \ce{H2N} $\to$ \ce{N2} + \ce{C2H5N4O5} & 1 \\
+ 100 & \ce{HN2} + \ce{C2H2N3O2} $\to$ \ce{N2} + \ce{C2H3N3O2} & 1 \\
+ 101 & \ce{HN2} + \ce{H3NO} $\to$ \ce{N2} + \ce{H2O} + \ce{H2N} & 1 \\
+ 102 & \ce{HN2} + \ce{H2N} $\to$ \ce{H3N3} & 1 \\
+ 103 & \ce{HN2} + \ce{C2H3N3O} $\to$ \ce{N2} + \ce{C2H4N3O} & 1 \\
+ 104 & \ce{HN2} + \ce{C2H4N3} $\to$ \ce{N2} + \ce{C2H5N3} & 1 \\
+ 105 & \ce{HN2} + \ce{C2H4N4O4} $\to$ \ce{N2} + \ce{C2H5N4O4} & 1 \\
+ 106 & \ce{HN2} + \ce{NO2} $\to$ \ce{N2} + \ce{HNO2} & 1 \\
+ 107 & \ce{HN2} $\to$ \ce{N2} + \ce{H} & 3 \\
+ 108 & \ce{C2H4N2} + \ce{HNO2} $\to$ \ce{C2H3N2} + \ce{H2O} + \ce{NO} & 1 \\
+ 109 & \ce{C2H4N2} $\to$ \ce{C2H4N2} & 2 \\
+ 110 & \ce{C2H2N2O} + \ce{H} $\to$ \ce{C2H2N2} + \ce{HO} & 1 \\
+ 111 & \ce{C2H2N2O} + \ce{HO} $\to$ \ce{C2HN2O} + \ce{H2O} & 1 \\
+ 112 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 2 \\
+ 113 & \ce{C2H3NO} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2H2NO} & 1 \\
+ 114 & \ce{C2H3N2} + \ce{HO} $\to$ \ce{C2H2N2} + \ce{H2O} & 1 \\
+ 115 & \ce{C2H3N2} + \ce{NO2} $\to$ \ce{C2H2N2} + \ce{HNO2} & 1 \\
+ 116 & \ce{C2H3N2} $\to$ \ce{C2H3N2} & 0 \\
+ 117 & \ce{C2H2NO} + \ce{H4N2} $\to$ \ce{C2H6N3O} & 1 \\
+ 118 & \ce{C2H2NO} + \ce{CNO} $\to$ \ce{C2HNO} + \ce{CHNO} & 1 \\
+ 119 & \ce{C2H2NO} + \ce{C2H4N4O4} $\to$ \ce{C2HNO} + \ce{C2H5N4O4} & 1 \\
+ 120 & \ce{CH2N2} $\to$ \ce{CH2N2} & 1 \\
+ 121 & \ce{C2H2N} + \ce{H2N} $\to$ \ce{C2H4N2} & 2 \\
+ 122 & \ce{C2H2N} + \ce{C2H2N2} $\to$ \ce{C4H4N3} & 1 \\
+ 123 & \ce{C2H3N3O5} $\to$ \ce{C2H3N3O5} & 0 \\
+ 124 & \ce{C2H3N3O5} $\to$ \ce{C2H3N3O5} & 1 \\
+ 125 & \ce{C2H2N3O5} $\to$ \ce{C2H2N3O5} & 1 \\
+ 126 & \ce{C2H2N3O5} $\to$ \ce{C2H2N3O5} & 1 \\
+ 127 & \ce{C2H2N3O5} $\to$ \ce{C2H2N2O3} + \ce{NO2} & 1 \\
+ 128 & \ce{C4H7N7O6} $\to$ \ce{C4H7N7O6} & 1 \\
+ 129 & \ce{C4H8N7O6} $\to$ \ce{C2H4N4O3} + \ce{C2H4N3O3} & 1 \\
+ 130 & \ce{C4H7N7O6} $\to$ \ce{C4H6N7O5} + \ce{HO} & 1 \\
+ 131 & \ce{C4H8N7O6} + \ce{NO2} $\to$ \ce{C2H4N4O3} + \ce{C2H4N3O3} + \ce{NO2} & 1 \\
+ 132 & \ce{C2H5N4O2} $\to$ \ce{C2H5N4O2} & 1 \\
+ 133 & \ce{C2H4N3O} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O3} + \ce{C2H3N3O} & 1 \\
+ 134 & \ce{C2H4N3O} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H3N3O} & 1 \\
+ 135 & \ce{C2H4N3O} + \ce{HO} $\to$ \ce{C2H3N3O} + \ce{H2O} & 1 \\
+ 136 & \ce{C2H4N3O} + \ce{NO2} $\to$ \ce{C2H3N3O} + \ce{HNO2} & 1 \\
+ 137 & \ce{C2H4N3O} $\to$ \ce{C2H2N2O} + \ce{H2N} & 1 \\
+ 138 & \ce{C2H4N3O} $\to$ \ce{C2H4N3O} & 1 \\
+ 139 & \ce{C2H3N4O} $\to$ \ce{C2H2N2O} + \ce{HN2} & 1 \\
+ 140 & \ce{C2H5N4O} $\to$ \ce{H3N} + \ce{C2H2N3O} & 1 \\
+ 141 & \ce{C2H5N4O} $\to$ \ce{C2H5N4O} & 0 \\
+ 142 & \ce{C2H4N3O2} + \ce{C2N2O} $\to$ \ce{C4H3N5O2} + \ce{HO} & 1 \\
+ 143 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 0 \\
+ 144 & \ce{C2H3N3O} $\to$ \ce{H2N} + \ce{C2HN2O} & 1 \\
+ 145 & \ce{C2H3N4O} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O} & 1 \\
+ 146 & \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{HO} & 1 \\
+ 147 & \ce{C2H3N3} + \ce{HO} $\to$ \ce{C2H4N3O} & 1 \\
+ 148 & \ce{C2H3N3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N3} & 1 \\
+ 149 & \ce{C2H3N3} + \ce{HO} $\to$ \ce{C2H4N3O} & 1 \\
+ 150 & \ce{C2H3N3} $\to$ \ce{C2HN2} + \ce{H2N} & 2 \\
+ 151 & \ce{C2H3N3O2} $\to$ \ce{C2H3N2O} + \ce{NO} & 1 \\
+ 152 & \ce{C2H3N3O} + \ce{C2H2N3O2} $\to$ \ce{C2H3N3O2} + \ce{C2H2N3O} & 1 \\
+ 153 & \ce{C2H3N3O} + \ce{C2H2N3O4} $\to$ \ce{C2H3N3} + \ce{HO} + \ce{C2HN3O4} & 1 \\
+ 154 & \ce{C2H3N3O} + \ce{H2NO} $\to$ \ce{HNO} + \ce{C2H3N3} + \ce{HO} & 1 \\
+ 155 & \ce{C2H3N3O} + \ce{HO2} $\to$ \ce{C2H2N3O} + \ce{H2O2} & 1 \\
+ 156 & \ce{C2H3N3O} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H2N3O} & 1 \\
+ 157 & \ce{C2H3N3O} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H2N3O} & 1 \\
+ 158 & \ce{C2H3N3O} + \ce{C2H2N3O} $\to$ \ce{C4H5N6O2} & 1 \\
+ 159 & \ce{C2H3N3O} + \ce{C2H2N3O4} $\to$ \ce{C2H2N3O} + \ce{C2H3N3O4} & 1 \\
+ 160 & \ce{C2H3N3O} + \ce{NO} $\to$ \ce{C2HN2O} + \ce{H2N2O} & 1 \\
+ 161 & \ce{C2H3N3O} + \ce{HO} $\to$ \ce{C2H4N3O2} & 1 \\
+ 162 & \ce{C2H3N3O} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N3O} & 1 \\
+ 163 & \ce{C2H3N3O} + \ce{HN2O} $\to$ \ce{C2H3N3O2} + \ce{HN2} & 1 \\
+ 164 & \ce{C2H3N3O} + \ce{NO2} $\to$ \ce{C2H3N4O3} & 0 \\
+ 165 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 1 \\
+ 166 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 1 \\
+ 167 & \ce{C2H3N3O} $\to$ \ce{H2N} + \ce{C2HN2O} & 3 \\
+ 168 & \ce{C2H4N2} + \ce{C2H4N3O2} + \ce{NO2} + \ce{NO2} $\to$ \ce{C2H5N3O2} + \ce{C2H3N4O4} & 1 \\
+ 169 & \ce{C2H4N2} + \ce{NO2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 170 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 171 & \ce{C2H4N3O2} $\to$ \ce{C2H4N2O} + \ce{NO} & 1 \\
+ 172 & \ce{C2H6N4O5} $\to$ \ce{H3N} + \ce{C2H3N3O5} & 1 \\
+ 173 & \ce{C2H6N4O5} $\to$ \ce{C2H6N4O5} & 1 \\
+ 174 & \ce{C2H5N4O5} $\to$ \ce{H3N} + \ce{C2H2N2O3} + \ce{NO2} & 1 \\
+ 175 & \ce{C2H5N4O4} $\to$ \ce{C2H5N3O2} + \ce{NO2} & 1 \\
+ 176 & \ce{C2H5N4O4} $\to$ \ce{C2H5N4O4} & 1 \\
+ 177 & \ce{C2H5N4O4} + \ce{HO} $\to$ \ce{C2H6N4O5} & 1 \\
+ 178 & \ce{C2H5N4O4} $\to$ \ce{C2H3N3O4} + \ce{H2N} & 1 \\
+ 179 & \ce{C2H4N4O4} + \ce{C2H2N3O4} $\to$ \ce{C2H5N4O4} + \ce{C2HN3O4} & 1 \\
+ 180 & \ce{C2H4N4O4} + \ce{C2H3N3O2} $\to$ \ce{C2H4N3O2} + \ce{C2H3N4O4} & 1 \\
+ 181 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H3N4O4} & 1 \\
+ 182 & \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2HN3O4} & 3 \\
+ 183 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 184 & \ce{C2H4N4O4} $\to$ \ce{H2N} + \ce{C2H2N3O4} & 2 \\
+ 185 & \ce{C2H4N3O2} $\to$ \ce{C2H2N2O2} + \ce{H2N} & 1 \\
+ 186 & \ce{C2H3N3O4} + \ce{C2HN} $\to$ \ce{C2H3N3O3} + \ce{C2HNO} & 1 \\
+ 187 & \ce{C2H3N3O4} + \ce{H2N} $\to$ \ce{C2H5N4O4} & 1 \\
+ 188 & \ce{C2H3N3O4} + \ce{HN} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 189 & \ce{C2H3N3O4} $\to$ \ce{C2H3N2O2} + \ce{NO2} & 1 \\
+ 190 & \ce{C2H3N3O4} $\to$ \ce{C2H3N3O4} & 1 \\
+ 191 & \ce{C2H3N2O2} $\to$ \ce{C2H3NO} + \ce{NO} & 1 \\
+ 192 & \ce{C2H3N2O} + \ce{C2H3N4O5} $\to$ \ce{C4H4N5O6} + \ce{H2N} & 1 \\
+ 193 & \ce{C2H3N2O} $\to$ \ce{C2H3N2O} & 2 \\
+ 194 & \ce{CH3NO} $\to$ \ce{CHNO} + \ce{H2} & 1 \\
+ 195 & \ce{H4N2} + \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H5N5O4} & 1 \\
+ 196 & \ce{H4N2} + \ce{H2N} $\to$ \ce{H3N} + \ce{HN2} + \ce{H2} & 1 \\
+ 197 & \ce{H4N2} + \ce{H2N} $\to$ \ce{H3N} + \ce{H3N2} & 3 \\
+ 198 & \ce{H4N2} + \ce{HO} $\to$ \ce{H3N2} + \ce{H2O} & 1 \\
+ 199 & \ce{H4N2} + \ce{NO2} $\to$ \ce{HN2} + \ce{HNO2} + \ce{H2} & 1 \\
+ 200 & \ce{C2H6N5O4} $\to$ \ce{C2H5N5O3} + \ce{HO} & 1 \\
+ 201 & \ce{C2H5N5O3} + \ce{HO} $\to$ \ce{C2H4N5O3} + \ce{H2O} & 1 \\
+ 202 & \ce{C2H5N5O3} $\to$ \ce{C2H3N4O3} + \ce{H2N} & 1 \\
+ 203 & \ce{C2H4N5O3} $\to$ \ce{C2H4N4O} + \ce{NO2} & 1 \\
+ 204 & \ce{C2H6N4O3} $\to$ \ce{C2H6N4O3} & 1 \\
+ 205 & \ce{C2H5N4O2} $\to$ \ce{C2H3N3O2} + \ce{H2N} & 1 \\
+ 206 & \ce{C2H6N4O2} $\to$ \ce{C2H5N4O} + \ce{HO} & 1 \\
+ 207 & \ce{C2H5N4O2} + \ce{NO2} $\to$ \ce{C2H5N5O4} & 1 \\
+ 208 & \ce{C2H5N4O2} $\to$ \ce{C2H5N4O2} & 1 \\
+ 209 & \ce{C2H5N4O4} + \ce{H2N} $\to$ \ce{C2H4N4O3} + \ce{H3NO} & 1 \\
+ 210 & \ce{C2H4N4O3} $\to$ \ce{H2N} + \ce{C2H2N3O3} & 1 \\
+ 211 & \ce{C2H4N3O2} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H3N3O2} & 1 \\
+ 212 & \ce{C2H4N3O2} + \ce{C2H2N3O4} $\to$ \ce{C2H5N3O2} + \ce{C2HN3O4} & 1 \\
+ 213 & \ce{C2H4N3O2} $\to$ \ce{C2H4N2} + \ce{NO2} & 0 \\
+ 214 & \ce{C2H3N3O} + \ce{NO2} $\to$ \ce{H3N} + \ce{C2N3O3} & 1 \\
+ 215 & \ce{C2H3N3O2} + \ce{H2N} + \ce{NO2} $\to$ \ce{C2H2N3O4} + \ce{H3N2} & 1 \\
+ 216 & \ce{C2H3N3O2} + \ce{NO2} $\to$ \ce{C2H2N3O2} + \ce{HNO2} & 1 \\
+ 217 & \ce{C2H3N3O2} $\to$ \ce{H2N} + \ce{C2HN2O2} & 1 \\
+ 218 & \ce{H4N2} $\to$ \ce{N2} + \ce{H2} + \ce{H2} & 1 \\
+ 219 & \ce{C2H4N3O3} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H3N3O3} & 1 \\
+ 220 & \ce{C2H3N4O4} $\to$ \ce{C2H2N3O2} + \ce{HNO2} & 1 \\
+ 221 & \ce{C2H2N4O4} $\to$ \ce{C2H2N3O2} + \ce{NO2} & 1 \\
+ 222 & \ce{C2H2N4O3} $\to$ \ce{C2H2N3O} + \ce{NO2} & 1 \\
+ 223 & \ce{C2H3N3O2} $\to$ \ce{C2H2N3O} + \ce{HO} & 1 \\
+ 224 & \ce{C2H2N3O2} $\to$ \ce{C2H2N2O} + \ce{NO} & 1 \\
+ 225 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 226 & \ce{C2H2N3O} + \ce{HO} $\to$ \ce{C2HN3O} + \ce{H2O} & 1 \\
+ 227 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 3 \\
+ 228 & \ce{C2H2N2O} $\to$ \ce{H2N} + \ce{C2NO} & 1 \\
+ 229 & \ce{C2H2N3} $\to$ \ce{C2N2} + \ce{H2N} & 1 \\
+ 230 & \ce{CH2N2O} $\to$ \ce{H} + \ce{CHN2O} & 1 \\
+ 231 & \ce{C2H3N3O2} $\to$ \ce{C2H2N3O} + \ce{HO} & 1 \\
+ 232 & \ce{C2H2N3O2} + \ce{H} $\to$ \ce{H3N} + \ce{C2N2O2} & 1 \\
+ 233 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 234 & \ce{C2H3N3} + \ce{C2HN2O2} $\to$ \ce{C2H2N3} + \ce{C2H2N2O2} & 1 \\
+ 235 & \ce{H3N3} $\to$ \ce{N2} + \ce{H} + \ce{H2N} & 1 \\
+ 236 & \ce{C2H5N3} $\to$ \ce{C2H3N2} + \ce{H2N} & 1 \\
+ 237 & \ce{C2H3N3O} $\to$ \ce{H2N} + \ce{C2HN2O} & 1 \\
+ 238 & \ce{C2H3N2O} $\to$ \ce{H3N} + \ce{C2NO} & 1 \\
+ 239 & \ce{C2H3N2} + \ce{H2N} $\to$ \ce{C2H5N3} & 1 \\
+ 240 & \ce{C2H3N2} + \ce{NO2} $\to$ \ce{C2H3N3O2} & 0 \\
+ 241 & \ce{C2H5N5O4} + \ce{H} $\to$ \ce{C2H6N5O4} & 1 \\
+ 242 & \ce{C2H5N5O4} $\to$ \ce{C2H3N3O2} + \ce{H2N} + \ce{NO2} & 1 \\
+ 243 & \ce{C2H5N5O4} $\to$ \ce{C2H3N4O4} + \ce{H2N} & 1 \\
+ 244 & \ce{C2H5N5O4} $\to$ \ce{C2H5N5O4} & 1 \\
+ 245 & \ce{C2H5N5O4} $\to$ \ce{H2N} + \ce{H2N} + \ce{C2HN3O4} & 1 \\
+ 246 & \ce{C2H4N4O4} + \ce{HO} $\to$ \ce{C2H3N4O4} + \ce{H2O} & 1 \\
+ 247 & \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2HN3O4} & 1 \\
+ 248 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 2 \\
+ 249 & \ce{C2H4N3O} + \ce{NO2} $\to$ \ce{C2H4N4O3} & 1 \\
+ 250 & \ce{H4N2O} + \ce{H} $\to$ \ce{H4N2} + \ce{HO} & 1 \\
+ 251 & \ce{C2H6N5O4} $\to$ \ce{C2H4N4O4} + \ce{H2N} & 1 \\
+ 252 & \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2N3O4} & 1 \\
+ 253 & \ce{C2H3N4O4} $\to$ \ce{C2H3N3O2} + \ce{NO2} & 1 \\
+ 254 & \ce{C2H3N4O4} $\to$ \ce{C2H3N2} + \ce{NO2} + \ce{NO2} & 1 \\
+ 255 & \ce{H3NO} + \ce{H2N} $\to$ \ce{H4N2O} + \ce{H} & 1 \\
+ 256 & \ce{H3NO} + \ce{NO} $\to$ \ce{H2N2O} + \ce{HO} & 1 \\
+ 257 & \ce{C2H4N3O3} $\to$ \ce{H2N} + \ce{C2H2N2O3} & 1 \\
+ 258 & \ce{H3NO} $\to$ \ce{H2O} + \ce{HN} & 1 \\
+ 259 & \ce{C2H5N5O4} $\to$ \ce{H2NO} + \ce{C2H3N4O3} & 1 \\
+ 260 & \ce{C2H5N4O4} $\to$ \ce{C2H3N3O3} + \ce{H2NO} & 1 \\
+ 261 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 262 & \ce{C2H6N4O2} $\to$ \ce{H2NO} + \ce{C2H4N3O} & 1 \\
+ 263 & \ce{C2H5N4O2} $\to$ \ce{HN} + \ce{C2H4N3O2} & 1 \\
+ 264 & \ce{C2H4N3O2} $\to$ \ce{HNO} + \ce{C2H2N2O} + \ce{H} & 1 \\
+ 265 & \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2HN3O4} & 1 \\
+ 266 & \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2HN2O2} + \ce{NO2} & 1 \\
+ 267 & \ce{C2H4N4O} $\to$ \ce{H2NO} + \ce{C2H2N3} & 1 \\
+ 268 & \ce{H2N2O2} $\to$ \ce{H2NO} + \ce{NO} & 1 \\
+ 269 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 270 & \ce{C2H3N3O} + \ce{HO} $\to$ \ce{C2H4N3O2} & 1 \\
+ 271 & \ce{C2H6N3O} + \ce{NO} $\to$ \ce{H2N2O} + \ce{C2H4N2O} & 1 \\
+ 272 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 1 \\
+ 273 & \ce{C2H2N3O2} $\to$ \ce{C2H2N2O} + \ce{NO} & 1 \\
+ 274 & \ce{C2H3N2O3} $\to$ \ce{C2H3NO} + \ce{NO2} & 1 \\
+ 275 & \ce{C2H4N3O2} $\to$ \ce{C2H2N2O2} + \ce{H2N} & 1 \\
+ 276 & \ce{C2H4N3O2} + \ce{C2H5N3O2} $\to$ \ce{H3N} + \ce{C2H2N2O2} + \ce{C2H4N3O2} & 1 \\
+ 277 & \ce{C2H4N3O2} $\to$ \ce{C2H2N2O2} + \ce{H2N} & 1 \\
+ 278 & \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{HO} & 2 \\
+ 279 & \ce{C2H5N4O5} $\to$ \ce{C2H5N3O3} + \ce{NO2} & 1 \\
+ 280 & \ce{C2H5N4O4} $\to$ \ce{C2H5N3O2} + \ce{NO2} & 1 \\
+ 281 & \ce{C2H4N4O4} + \ce{NO} $\to$ \ce{HNO} + \ce{C2H3N4O4} & 1 \\
+ 282 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H3N4O3} & 1 \\
+ 283 & \ce{C2H2N3O4} + \ce{C2H2N4O3} $\to$ \ce{C2H3N4O3} + \ce{C2HN3O4} & 1 \\
+ 284 & \ce{C2H2N3O4} + \ce{H2N} + \ce{H2N} $\to$ \ce{H2N2} + \ce{C2H3N3O4} + \ce{H} & 1 \\
+ 285 & \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2HN3O4} & 2 \\
+ 286 & \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{C2H2N3O3} + \ce{H2NO} & 1 \\
+ 287 & \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{C2H2N2O2} + \ce{H2N} + \ce{NO2} & 1 \\
+ 288 & \ce{C2H2N3O4} + \ce{C2N2O} $\to$ \ce{C2HN2O} + \ce{C2HN3O4} & 1 \\
+ 289 & \ce{C2H2N3O4} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN3O4} & 1 \\
+ 290 & \ce{C2H2N3O4} + \ce{C2H4N4O4} $\to$ \ce{C2H3N3O4} + \ce{C2H3N4O4} & 1 \\
+ 291 & \ce{C2H2N3O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2HN3O4} & 2 \\
+ 292 & \ce{C2H2N3O4} + \ce{C2HN3O4} $\to$ \ce{C2H2N3O4} + \ce{C2HN3O4} & 2 \\
+ 293 & \ce{C2H2N3O4} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2HN3O4} & 1 \\
+ 294 & \ce{C2H2N3O4} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN3O4} & 1 \\
+ 295 & \ce{C2H2N3O4} $\to$ \ce{C2H2N2O2} + \ce{NO2} & 7 \\
+ 296 & \ce{C2H2N3O4} $\to$ \ce{C2H2N} + \ce{NO2} + \ce{NO2} & 1 \\
+ 297 & \ce{C2H2N3O4} $\to$ \ce{C2H2N3O4} & 1 \\
+ 298 & \ce{C2H2N3O4} $\to$ \ce{H} + \ce{C2HN3O4} & 1 \\
+ 299 & \ce{C2H2N3O4} $\to$ \ce{H2} + \ce{C2N3O4} & 5 \\
+ 300 & \ce{C2H2N3O4} $\to$ \ce{C2H2N2O2} + \ce{NO2} & 1 \\
+ 301 & \ce{C2H2N3O4} $\to$ \ce{C2H2N3O4} & 8 \\
+ 302 & \ce{C2H2N2} + \ce{HO} $\to$ \ce{C2H3N2O} & 1 \\
+ 303 & \ce{C2H2N2} $\to$ \ce{C2N2} + \ce{H2} & 1 \\
+ 304 & \ce{C2H2N2} $\to$ \ce{C2H2N2} & 1 \\
+ 305 & \ce{CH3N2} + \ce{C2H2N3O4} $\to$ \ce{CH2N2} + \ce{C2H3N3O4} & 1 \\
+ 306 & \ce{C2H2N2O3} $\to$ \ce{C2H2NO} + \ce{NO2} & 1 \\
+ 307 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 0 \\
+ 308 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 1 \\
+ 309 & \ce{H3N2} + \ce{C2H4N4O4} $\to$ \ce{H2N2} + \ce{C2H5N4O4} & 1 \\
+ 310 & \ce{H3N2} $\to$ \ce{H2N2} + \ce{H} & 1 \\
+ 311 & \ce{H3N2} $\to$ \ce{HN2} + \ce{H2} & 4 \\
+ 312 & \ce{C2H5N5O4} $\to$ \ce{C2H4N5O3} + \ce{HO} & 1 \\
+ 313 & \ce{C2H4N5O3} + \ce{C2H2N4O3} $\to$ \ce{C2H3N5O3} + \ce{C2H3N4O3} & 1 \\
+ 314 & \ce{C2H4N5O3} + \ce{H} $\to$ \ce{C2H5N5O3} & 1 \\
+ 315 & \ce{C2H4N5O3} + \ce{HO} $\to$ \ce{C2H3N4O4} + \ce{H2N} & 1 \\
+ 316 & \ce{C2H6N4O3} $\to$ \ce{C2H4N3O3} + \ce{H2N} & 1 \\
+ 317 & \ce{C2H5N4O2} $\to$ \ce{H3N} + \ce{C2H2N2} + \ce{NO2} & 1 \\
+ 318 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 319 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 1 \\
+ 320 & \ce{C2H3N4O2} + \ce{HO} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 321 & \ce{C2H4N4O3} $\to$ \ce{C2H3N4O2} + \ce{HO} & 1 \\
+ 322 & \ce{C2H2N3O} + \ce{NO2} $\to$ \ce{C2H2N4O3} & 1 \\
+ 323 & \ce{C2H2N3O} $\to$ \ce{H2N} + \ce{C2N2O} & 1 \\
+ 324 & \ce{C2H3N4O4} $\to$ \ce{H2} + \ce{C2HN4O4} & 1 \\
+ 325 & \ce{C2H4N3O} + \ce{NO} $\to$ \ce{C2H3N3} + \ce{HNO2} & 1 \\
+ 326 & \ce{H2NO} + \ce{C2H4N4O4} $\to$ \ce{HNO} + \ce{C2H5N4O4} & 1 \\
+ 327 & \ce{H2NO} + \ce{C2H4N4O4} $\to$ \ce{HNO} + \ce{H} + \ce{C2H4N4O4} & 1 \\
+ 328 & \ce{H2NO} + \ce{C2H4N3O2} $\to$ \ce{HNO} + \ce{C2H5N3O2} & 1 \\
+ 329 & \ce{H2NO} + \ce{C2HN2O2} $\to$ \ce{HNO} + \ce{C2H2N2O2} & 1 \\
+ 330 & \ce{H2NO} + \ce{NO2} $\to$ \ce{HNO} + \ce{HNO2} & 2 \\
+ 331 & \ce{H2NO} $\to$ \ce{HNO} + \ce{H} & 0 \\
+ 332 & \ce{H2NO} $\to$ \ce{H2} + \ce{NO} & 3 \\
+ 333 & \ce{C2H2N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN4O3} & 1 \\
+ 334 & \ce{C2HN4O3} $\to$ \ce{HNO} + \ce{C2N3O2} & 1 \\
+ 335 & \ce{C2HN4O3} $\to$ \ce{C2HN4O3} & 1 \\
+ 336 & \ce{C2N2O} + \ce{H} $\to$ \ce{C2HN2O} & 0 \\
+ 337 & \ce{C2N2O} $\to$ \ce{C2N2O} & 1 \\
+ 338 & \ce{C2N2O} $\to$ \ce{C2N2O} & 1 \\
+ 339 & \ce{C2N2O2} + \ce{C2H4N3O2} $\to$ \ce{C4H4N5O4} & 0 \\
+ 340 & \ce{C2N2O2} $\to$ \ce{C2NO} + \ce{NO} & 1 \\
+ 341 & \ce{C2N2O2} $\to$ \ce{C2N2O2} & 1 \\
+ 342 & \ce{C2H4N2O} + \ce{H2N} $\to$ \ce{C2H2NO} + \ce{H4N2} & 1 \\
+ 343 & \ce{C2H4N2O} + \ce{NO} $\to$ \ce{HNO} + \ce{C2H3N2O} & 1 \\
+ 344 & \ce{C2H4N2O} + \ce{CNO} $\to$ \ce{CHNO} + \ce{C2H3N2O} & 1 \\
+ 345 & \ce{C2H4N2O} + \ce{NO2} $\to$ \ce{C2H3N2O} + \ce{HNO2} & 1 \\
+ 346 & \ce{C2H4N2O} $\to$ \ce{H3N} + \ce{C2HNO} & 1 \\
+ 347 & \ce{C2H4N2O} $\to$ \ce{C2H2NO} + \ce{H2N} & 2 \\
+ 348 & \ce{C2H3N2O} $\to$ \ce{C2HNO} + \ce{H2N} & 2 \\
+ 349 & \ce{C2H3N4O3} + \ce{NO} $\to$ \ce{C2H3N5O4} & 1 \\
+ 350 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 2 \\
+ 351 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{C2H4N4O4} & 1 \\
+ 352 & \ce{C2H3N4O3} + \ce{C2H4N4O4} $\to$ \ce{C2H4N4O3} + \ce{C2H3N4O4} & 1 \\
+ 353 & \ce{C2H3N4O3} $\to$ \ce{C2H3N4O3} & 1 \\
+ 354 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{NO} + \ce{C2H4N3O3} & 1 \\
+ 355 & \ce{C2H2N4O3} $\to$ \ce{C2H2N3O} + \ce{NO2} & 1 \\
+ 356 & \ce{C5H3N7O3} $\to$ \ce{C5H3N6O} + \ce{NO2} & 1 \\
+ 357 & \ce{C2H3N4O3} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H2N4O3} & 1 \\
+ 358 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{C2H3N4O4} + \ce{H} & 1 \\
+ 359 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 2 \\
+ 360 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 1 \\
+ 361 & \ce{C2H3N4O3} $\to$ \ce{C2HN3O3} + \ce{H2N} & 2 \\
+ 362 & \ce{C2H2N4O3} $\to$ \ce{C2H2N3O} + \ce{NO2} & 1 \\
+ 363 & \ce{C2H2N3O2} $\to$ \ce{C2N2O2} + \ce{H2N} & 1 \\
+ 364 & \ce{C2HN4O3} $\to$ \ce{C2HN3O} + \ce{NO2} & 1 \\
+ 365 & \ce{C2H2N4O3} $\to$ \ce{C2H2N3O} + \ce{NO2} & 1 \\
+ 366 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 367 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 3 \\
+ 368 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{C2H4N4O4} & 0 \\
+ 369 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 3 \\
+ 370 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 5 \\
+ 371 & \ce{C2H3N4O3} $\to$ \ce{C2HN3O3} + \ce{H2N} & 1 \\
+ 372 & \ce{C2H3N4O3} $\to$ \ce{C2H3N4O3} & 1 \\
+ 373 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 374 & \ce{C2H2N4O4} $\to$ \ce{C2H2N4O4} & 1 \\
+ 375 & \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{H2NO} + \ce{C2H2N3O3} & 1 \\
+ 376 & \ce{C2H3N4O3} + \ce{HO2} $\to$ \ce{C2H4N4O5} & 1 \\
+ 377 & \ce{C2H3N4O3} + \ce{H2N} $\to$ \ce{C2H4N5O3} + \ce{H} & 1 \\
+ 378 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 2 \\
+ 379 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 380 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{C2H4N4O4} & 1 \\
+ 381 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 1 \\
+ 382 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 383 & \ce{C2H2N4O3} $\to$ \ce{C2N3O3} + \ce{H2N} & 1 \\
+ 384 & \ce{C4H5N7O5} $\to$ \ce{C4H5N7O5} & 1 \\
+ 385 & \ce{C4H6N7O5} $\to$ \ce{C4H5N7O5} + \ce{H} & 1 \\
+ 386 & \ce{C4H6N7O5} $\to$ \ce{C4H6N6O3} + \ce{NO2} & 1 \\
+ 387 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 388 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 389 & \ce{C2H4N3O} $\to$ \ce{C2H4N3O} & 1 \\
+ 390 & \ce{C2H2N5O5} $\to$ \ce{C2H2N5O5} & 1 \\
+ 391 & \ce{C2H3N3O} + \ce{NO} $\to$ \ce{C2H3N4O2} & 0 \\
+ 392 & \ce{C2H3N3O} + \ce{NO} $\to$ \ce{C2H3N4O2} & 1 \\
+ 393 & \ce{C2H3N3O} + \ce{HO} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 1 \\
+ 394 & \ce{C2H3N3O} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N3O} & 1 \\
+ 395 & \ce{C2H3N3O} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N3O} & 1 \\
+ 396 & \ce{C2H3N3O} $\to$ \ce{C2HN2O} + \ce{H2N} & 2 \\
+ 397 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 8 \\
+ 398 & \ce{C2H3N3O} $\to$ \ce{H2N} + \ce{C2HN2O} & 1 \\
+ 399 & \ce{C2H2N3O} + \ce{C2H2N3O4} $\to$ \ce{C4H4N6O5} & 1 \\
+ 400 & \ce{C2HN3O2} $\to$ \ce{C2HN2O} + \ce{NO} & 1 \\
+ 401 & \ce{C4H5N6O2} $\to$ \ce{C4H5N6O2} & 1 \\
+ 402 & \ce{C2H3N3O} + \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{H2O} + \ce{C2H2N3O} & 1 \\
+ 403 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 4 \\
+ 404 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 1 \\
+ 405 & \ce{C2H3N3O} $\to$ \ce{H} + \ce{C2H2N3O} & 1 \\
+ 406 & \ce{C2H3N3O} $\to$ \ce{H2N} + \ce{C2HN2O} & 1 \\
+ 407 & \ce{C2H3N3O} $\to$ \ce{C2H2N3} + \ce{HO} & 1 \\
+ 408 & \ce{C2H2N3O} + \ce{C2H4N4O4} $\to$ \ce{C2H3N3O} + \ce{C2H3N4O4} & 1 \\
+ 409 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 0 \\
+ 410 & \ce{C2HN3O} + \ce{NO2} $\to$ \ce{C2HN4O3} & 1 \\
+ 411 & \ce{C4H3N6O5} + \ce{H} $\to$ \ce{C4H4N6O5} & 1 \\
+ 412 & \ce{C4H3N5O2} $\to$ \ce{C2H3N3O} + \ce{C2N2O} & 1 \\
+ 413 & \ce{C4H4N6O5} $\to$ \ce{C4H4N6O5} & 1 \\
+ 414 & \ce{C4H6N6O3} + \ce{NO2} $\to$ \ce{C4H6N7O5} & 1 \\
+ 415 & \ce{C4H4N6O5} $\to$ \ce{C4H4N6O5} & 1 \\
+ 416 & \ce{C2H4N4O3} + \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{C2H5N4O4} & 1 \\
+ 417 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{C2H2N2O2} + \ce{HNO2} + \ce{H2N} & 1 \\
+ 418 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{C2H3N3O} + \ce{H2O} + \ce{NO2} & 1 \\
+ 419 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{C2H5N4O4} & 1 \\
+ 420 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H3N4O3} & 1 \\
+ 421 & \ce{C2H4N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H3N4O3} & 1 \\
+ 422 & \ce{C2H4N4O3} + \ce{C2H4N3O3} $\to$ \ce{C2H4N4O2} + \ce{C2H4N3O4} & 1 \\
+ 423 & \ce{C2H4N4O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 3 \\
+ 424 & \ce{C2H4N4O3} $\to$ \ce{C2H4N4O3} & 1 \\
+ 425 & \ce{C2H4N4O3} $\to$ \ce{C2H4N4O3} & 1 \\
+ 426 & \ce{C2H4N4O3} $\to$ \ce{C2H4N4O3} & 1 \\
+ 427 & \ce{C2H4N4O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 428 & \ce{C2H5N3O2} $\to$ \ce{C2H5N2O} + \ce{NO} & 1 \\
+ 429 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 430 & \ce{C2H4N3O2} $\to$ \ce{C2H4N2O} + \ce{NO} & 4 \\
+ 431 & \ce{C2HN4O3} $\to$ \ce{C2HN3O2} + \ce{NO} & 1 \\
+ 432 & \ce{C2H3N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 433 & \ce{C2H3N4O3} $\to$ \ce{C2H2N3O} + \ce{NO} + \ce{HO} & 1 \\
+ 434 & \ce{C2H2N4O3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN4O3} & 1 \\
+ 435 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 436 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 437 & \ce{C2H2N4O3} $\to$ \ce{C2H2N3O} + \ce{NO2} & 3 \\
+ 438 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 2 \\
+ 439 & \ce{C2H3N3O2} $\to$ \ce{C2H3N3O2} & 1 \\
+ 440 & \ce{C2H3N3O2} $\to$ \ce{C2HN2O2} + \ce{H2N} & 1 \\
+ 441 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 442 & \ce{C2HN3O3} + \ce{H2N} $\to$ \ce{C2H3N4O3} & 1 \\
+ 443 & \ce{C2HN3O3} $\to$ \ce{C2HN2O} + \ce{NO2} & 4 \\
+ 444 & \ce{C2HN3O3} $\to$ \ce{C2HN3O3} & 1 \\
+ 445 & \ce{C4H5N6O2} $\to$ \ce{C2H4N4O} + \ce{C2HN2O} & 1 \\
+ 446 & \ce{C4H5N6O2} $\to$ \ce{C4H5N6O2} & 1 \\
+ 447 & \ce{C4H4N5O4} $\to$ \ce{C4H4N5O4} & 0 \\
+ 448 & \ce{C2N3O3} + \ce{H2N} $\to$ \ce{C2H2N3O} + \ce{NO2} & 1 \\
+ 449 & \ce{C2N3O3} $\to$ \ce{C2N2O} + \ce{NO2} & 1 \\
+ 450 & \ce{C2N3O3} $\to$ \ce{C2N2O} + \ce{NO2} & 1 \\
+ 451 & \ce{C4H5N6O3} $\to$ \ce{C2H2N3O2} + \ce{C2H3N3O} & 1 \\
+ 452 & \ce{C4H5N6O3} $\to$ \ce{C4H5N6O3} & 1 \\
+ 453 & \ce{C2H4N5O5} $\to$ \ce{HNO2} + \ce{NO} + \ce{C2H3N3O2} & 1 \\
+ 454 & \ce{C2H3N5O4} $\to$ \ce{C2H3N3O} + \ce{NO} + \ce{NO2} & 1 \\
+ 455 & \ce{C2H2N4O2} $\to$ \ce{C2HN2O} + \ce{HN2O} & 1 \\
+ 456 & \ce{C2H2N4O2} $\to$ \ce{C2H2N4O2} & 0 \\
+ 457 & \ce{C2H3N4O2} $\to$ \ce{C2H3N4O2} & 1 \\
+ 458 & \ce{C2H3N5O5} + \ce{H} $\to$ \ce{C2H2N5O5} + \ce{H2} & 1 \\
+ 459 & \ce{C2H4N4O2} $\to$ \ce{C2H3N4O} + \ce{HO} & 1 \\
+ 460 & \ce{CN2O2} $\to$ \ce{NO} + \ce{CNO} & 2 \\
+ 461 & \ce{C2H4N5O6} $\to$ \ce{NO} + \ce{C2H4N4O5} & 1 \\
+ 462 & \ce{N2O4} $\to$ \ce{NO} + \ce{NO3} & 1 \\
+ 463 & \ce{C2HN3O4} $\to$ \ce{NO} + \ce{C2HN2O3} & 1 \\
+ 464 & \ce{C4H5N7O5} $\to$ \ce{C4H5N6O3} + \ce{NO2} & 1 \\
+ 465 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 466 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 467 & \ce{C2H2N4O4} $\to$ \ce{C2H2N4O4} & 1 \\
+ 468 & \ce{C2H2N3O} + \ce{NO} + \ce{HO} $\to$ \ce{C2H3N4O3} & 1 \\
+ 469 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 4 \\
+ 470 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 1 \\
+ 471 & \ce{C2H3N5O4} $\to$ \ce{N2} + \ce{C2H3N2O3} + \ce{NO} & 1 \\
+ 472 & \ce{CHNO} + \ce{H2N} $\to$ \ce{H3N} + \ce{CNO} & 1 \\
+ 473 & \ce{CHNO} + \ce{NO2} $\to$ \ce{HNO2} + \ce{CNO} & 1 \\
+ 474 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 1 \\
+ 475 & \ce{C2HN2O2} + \ce{H2N} $\to$ \ce{C2H3N3O2} & 1 \\
+ 476 & \ce{C2H4N3O2} $\to$ \ce{H2O} + \ce{C2H2N3O} & 1 \\
+ 477 & \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{HO} & 1 \\
+ 478 & \ce{C2H4N4O4} + \ce{NO} $\to$ \ce{C2H4N5O5} & 1 \\
+ 479 & \ce{C2H4N4O4} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H3N4O4} & 1 \\
+ 480 & \ce{C2H4N4O4} + \ce{C2H3N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H2N4O4} & 1 \\
+ 481 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 5 \\
+ 482 & \ce{C2H4N4O4} + \ce{C2H3N2O2} $\to$ \ce{C2H4N2O2} + \ce{C2H3N4O4} & 1 \\
+ 483 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H3N4O4} & 1 \\
+ 484 & \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 485 & \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 486 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 6 \\
+ 487 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 488 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 489 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 490 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 491 & \ce{C2H5N4O4} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H4N4O3} + \ce{C2H3N4O4} & 1 \\
+ 492 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{C2H4N4O5} + \ce{H} & 1 \\
+ 493 & \ce{C2H4N4O4} + \ce{C2H2N2O3} $\to$ \ce{C2H5N4O4} + \ce{C2HN2O3} & 1 \\
+ 494 & \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2HN3O4} & 1 \\
+ 495 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 10 \\
+ 496 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 497 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 2 \\
+ 498 & \ce{C2H4N4O4} $\to$ \ce{HO} + \ce{C2H3N4O3} & 1 \\
+ 499 & \ce{C2H5N4O4} $\to$ \ce{C2H4N4O3} + \ce{HO} & 1 \\
+ 500 & \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 501 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 3 \\
+ 502 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 503 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 4 \\
+ 504 & \ce{C2H4N4O4} $\to$ \ce{HNO2} + \ce{C2H3N3O2} & 1 \\
+ 505 & \ce{C2H4N4O4} $\to$ \ce{HO} + \ce{C2H3N4O3} & 1 \\
+ 506 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 507 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 508 & \ce{C2H3N4O4} $\to$ \ce{C2HN3O4} + \ce{H2N} & 1 \\
+ 509 & \ce{C2H4N3O2} + \ce{H2N} $\to$ \ce{C2H6N4O2} & 1 \\
+ 510 & \ce{C2H4N3O2} + \ce{C2H3N4O3} $\to$ \ce{H2O} + \ce{C2H3N3O} + \ce{C2H2N4O3} & 1 \\
+ 511 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 1 \\
+ 512 & \ce{C2H4N3O2} $\to$ \ce{C2H3N3O} + \ce{HO} & 1 \\
+ 513 & \ce{C2H4N3O2} + \ce{H} $\to$ \ce{H3N} + \ce{C2H2N2O2} & 1 \\
+ 514 & \ce{C2H4N3O2} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N3O} + \ce{C2H3N4O4} & 1 \\
+ 515 & \ce{C2H4N3O2} + \ce{C2H4N4O4} $\to$ \ce{C2H3N2O2} + \ce{C2H5N5O4} & 1 \\
+ 516 & \ce{C2H4N3O2} + \ce{C2H4N4O4} $\to$ \ce{C2H5N3O2} + \ce{C2H3N4O4} & 1 \\
+ 517 & \ce{C2H4N3O2} + \ce{C2H3N4O4} $\to$ \ce{C2H3N3O} + \ce{C2H4N4O5} & 1 \\
+ 518 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H3N4O3} + \ce{HO} & 1 \\
+ 519 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 2 \\
+ 520 & \ce{C2H4N3O2} $\to$ \ce{C2H3N3O} + \ce{HO} & 2 \\
+ 521 & \ce{C2H4N3O2} $\to$ \ce{C2H2N2O2} + \ce{H2N} & 2 \\
+ 522 & \ce{C2H3N2O2} $\to$ \ce{C2H2N2O} + \ce{HO} & 2 \\
+ 523 & \ce{C2H3N2O2} $\to$ \ce{C2H3N2O2} & 1 \\
+ 524 & \ce{C2H5N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O3} & 1 \\
+ 525 & \ce{C2H5N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O3} & 1 \\
+ 526 & \ce{C2H5N4O4} $\to$ \ce{C2H4N4O3} + \ce{HO} & 7 \\
+ 527 & \ce{C2H5N4O4} $\to$ \ce{C2H5N4O4} & 1 \\
+ 528 & \ce{C2H5N4O4} $\to$ \ce{C2H5N4O4} & 1 \\
+ 529 & \ce{C2H5N4O4} $\to$ \ce{C2H5N3O2} + \ce{NO2} & 5 \\
+ 530 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 1 \\
+ 531 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 532 & \ce{C2H3N4O4} $\to$ \ce{C2H2N4O3} + \ce{HO} & 1 \\
+ 533 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 534 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 535 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 536 & \ce{C2H2N3O4} + \ce{H2N} $\to$ \ce{C2H2N4O4} + \ce{H2} & 1 \\
+ 537 & \ce{C2H2N3O4} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN3O4} & 1 \\
+ 538 & \ce{C2H2N3O4} $\to$ \ce{C2HN3O3} + \ce{HO} & 2 \\
+ 539 & \ce{C2H2N3O4} $\to$ \ce{C2HN3O4} + \ce{H} & 1 \\
+ 540 & \ce{C2H2N3O4} $\to$ \ce{C2H2N2O2} + \ce{NO2} & 1 \\
+ 541 & \ce{C2H2N3O4} $\to$ \ce{C2HN2O} + \ce{HO} + \ce{NO2} & 1 \\
+ 542 & \ce{C2H2N3O4} $\to$ \ce{C2H2N3O4} & 1 \\
+ 543 & \ce{C2HN3O4} + \ce{H} $\to$ \ce{C2HN3O3} + \ce{HO} & 1 \\
+ 544 & \ce{C2HN3O4} $\to$ \ce{C2N3O3} + \ce{HO} & 1 \\
+ 545 & \ce{C2HN3O4} $\to$ \ce{C2HN2O2} + \ce{NO2} & 1 \\
+ 546 & \ce{C2HN3O4} $\to$ \ce{HNO2} + \ce{C2N2O2} & 1 \\
+ 547 & \ce{C2H2N3O5} $\to$ \ce{C2HN3O4} + \ce{HO} & 1 \\
+ 548 & \ce{C2H2N3O5} $\to$ \ce{C2H2N3O5} & 0 \\
+ 549 & \ce{C2H2N2O3} + \ce{NO2} $\to$ \ce{C2H2N3O5} & 1 \\
+ 550 & \ce{C2H5N3O2} + \ce{H2N} $\to$ \ce{H3N} + \ce{C2H3N3O} + \ce{HO} & 1 \\
+ 551 & \ce{C2H5N3O2} + \ce{H2N} $\to$ \ce{H4N2} + \ce{C2H3N2O2} & 1 \\
+ 552 & \ce{C2H5N3O2} + \ce{H2N} $\to$ \ce{H3NO} + \ce{C2H4N3O} & 1 \\
+ 553 & \ce{C2H5N3O2} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H4N3O2} & 1 \\
+ 554 & \ce{C2H5N3O2} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H4N3O2} & 1 \\
+ 555 & \ce{C2H5N3O2} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O4} + \ce{C2H4N3O} & 1 \\
+ 556 & \ce{C2H5N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O3} + \ce{HO} & 1 \\
+ 557 & \ce{C2H5N3O2} $\to$ \ce{C2H4N3O} + \ce{HO} & 1 \\
+ 558 & \ce{C2H5N3O2} $\to$ \ce{C2H5N3O2} & 2 \\
+ 559 & \ce{C2H5N3O2} $\to$ \ce{HO} + \ce{C2H4N3O} & 5 \\
+ 560 & \ce{C2H2N2O2} + \ce{HO} $\to$ \ce{H2O} + \ce{C2HN2O2} & 1 \\
+ 561 & \ce{C2H2N2O2} + \ce{C2N2O2} $\to$ \ce{C2HN2O2} + \ce{C2HN2O2} & 1 \\
+ 562 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN2O2} & 1 \\
+ 563 & \ce{C2H2N2O2} $\to$ \ce{C2HN2O} + \ce{HO} & 1 \\
+ 564 & \ce{C2H2N2O2} $\to$ \ce{C2HN2O} + \ce{HO} & 3 \\
+ 565 & \ce{C2HN2O2} + \ce{H2N} $\to$ \ce{C2H3N3O2} & 1 \\
+ 566 & \ce{C2HN2O2} + \ce{C2HN2O2} $\to$ \ce{C2HN2O} + \ce{HO} + \ce{C2N2O2} & 1 \\
+ 567 & \ce{C2HN2O2} $\to$ \ce{C2N2O} + \ce{HO} & 2 \\
+ 568 & \ce{HNO3} + \ce{C2H4N3O2} $\to$ \ce{H2O} + \ce{C2H3N4O4} & 1 \\
+ 569 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 570 & \ce{C2H4N4O4} $\to$ \ce{HO} + \ce{C2H3N4O3} & 1 \\
+ 571 & \ce{C2H3N4O4} $\to$ \ce{C2H3N3O2} + \ce{NO2} & 1 \\
+ 572 & \ce{C2H4N4O4} $\to$ \ce{HO} + \ce{C2H3N4O3} & 1 \\
+ 573 & \ce{C2H3N4O4} $\to$ \ce{C2H2N4O3} + \ce{HO} & 1 \\
+ 574 & \ce{C2H5N3O2} $\to$ \ce{C2H4N3O} + \ce{HO} & 1 \\
+ 575 & \ce{C2H5N3O2} $\to$ \ce{C2H5N3O2} & 1 \\
+ 576 & \ce{C4H4N6O5} $\to$ \ce{C4H3N6O4} + \ce{HO} & 1 \\
+ 577 & \ce{C4H4N5O3} + \ce{NO2} $\to$ \ce{C4H4N6O5} & 0 \\
+ 578 & \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{HO} & 1 \\
+ 579 & \ce{C2H4N3O2} $\to$ \ce{C2H3N3O} + \ce{HO} & 1 \\
+ 580 & \ce{C2H3N3O} $\to$ \ce{C2HN2O} + \ce{H2N} & 1 \\
+ 581 & \ce{C2H3N3O} $\to$ \ce{C2H3N3O} & 1 \\
+ 582 & \ce{C2H2N2O} $\to$ \ce{C2HN2} + \ce{HO} & 1 \\
+ 583 & \ce{C2HN2O} $\to$ \ce{C2N2} + \ce{HO} & 1 \\
+ 584 & \ce{HNO2} + \ce{H2N} $\to$ \ce{H3NO} + \ce{NO} & 2 \\
+ 585 & \ce{HNO2} + \ce{NO} + \ce{C2H3N3O2} $\to$ \ce{C2H3N5O4} + \ce{HO} & 1 \\
+ 586 & \ce{HNO2} + \ce{C2H3N3O2} $\to$ \ce{C2H3N4O3} + \ce{HO} & 1 \\
+ 587 & \ce{CH2NO2} $\to$ \ce{CHNO} + \ce{HO} & 1 \\
+ 588 & \ce{C2H4N4O5} + \ce{H} $\to$ \ce{HO} + \ce{C2H4N4O4} & 1 \\
+ 589 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 590 & \ce{C2H3N4O3} $\to$ \ce{C2H3N4O3} & 1 \\
+ 591 & \ce{C2H3N4O4} + \ce{H} $\to$ \ce{HO} + \ce{C2H3N4O3} & 1 \\
+ 592 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O2} + \ce{NO} & 1 \\
+ 593 & \ce{C2H5N3O2} + \ce{HO} $\to$ \ce{CH2N2} + \ce{H2O} + \ce{CH2NO2} & 1 \\
+ 594 & \ce{C2H4N4O5} $\to$ \ce{H2O} + \ce{C2H2N4O4} & 1 \\
+ 595 & \ce{C2H5N3O3} $\to$ \ce{HO2} + \ce{C2H4N3O} & 1 \\
+ 596 & \ce{C2H4N4O5} $\to$ \ce{H2O} + \ce{C2H2N4O4} & 1 \\
+ 597 & \ce{C2H5N3O3} + \ce{NO2} $\to$ \ce{C2H5N4O5} & 1 \\
+ 598 & \ce{C2H5N2O} $\to$ \ce{C2H4N2O} + \ce{H} & 1 \\
+ 599 & \ce{C2H4N4O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 600 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 601 & \ce{C2H4N4O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 602 & \ce{C2H5N3O2} + \ce{HO} $\to$ \ce{C2H5N3O2} + \ce{HO} & 1 \\
+ 603 & \ce{C2H5N3O2} + \ce{HO} $\to$ \ce{C2H6N3O3} & 0 \\
+ 604 & \ce{C2H2N4O3} $\to$ \ce{HO} + \ce{C2HN4O2} & 1 \\
+ 605 & \ce{C2H4N4O3} $\to$ \ce{HO} + \ce{C2H3N4O2} & 1 \\
+ 606 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 607 & \ce{C2H4N4O3} + \ce{NO} $\to$ \ce{C2H4N4O2} + \ce{NO2} & 1 \\
+ 608 & \ce{C2H4N4O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 609 & \ce{C2H2N5O5} $\to$ \ce{N2} + \ce{HO} + \ce{C2HN3O4} & 1 \\
+ 610 & \ce{CHN2O} $\to$ \ce{CN2} + \ce{HO} & 1 \\
+ 611 & \ce{C2H5N3O2} $\to$ \ce{C2H4N3O} + \ce{HO} & 1 \\
+ 612 & \ce{CHO} + \ce{H2N} $\to$ \ce{CH3NO} & 1 \\
+ 613 & \ce{CN} + \ce{NO2} $\to$ \ce{CN2O2} & 2 \\
+ 614 & \ce{CN} + \ce{NO2} $\to$ \ce{NO} + \ce{CNO} & 1 \\
+ 615 & \ce{C2HN} + \ce{NO2} $\to$ \ce{C2HNO} + \ce{NO} & 1 \\
+ 616 & \ce{C2HN} + \ce{NO2} $\to$ \ce{C2HN2O2} & 1 \\
+ 617 & \ce{C2N} + \ce{NO2} $\to$ \ce{C2N2O2} & 1 \\
+ 618 & \ce{CHN} + \ce{CN2O5} $\to$ \ce{C2HN2O3} + \ce{NO2} & 1 \\
+ 619 & \ce{H} + \ce{H2N} $\to$ \ce{H3N} & 1 \\
+ 620 & \ce{H} + \ce{H2N} $\to$ \ce{H2} + \ce{HN} & 1 \\
+ 621 & \ce{H} + \ce{C2H2N3O} $\to$ \ce{C2H3N3O} & 1 \\
+ 622 & \ce{H} + \ce{CHN2O} $\to$ \ce{H2N} + \ce{CNO} & 1 \\
+ 623 & \ce{H} + \ce{HO} $\to$ \ce{H2O} & 2 \\
+ 624 & \ce{H} + \ce{C4H7N6O4} $\to$ \ce{C4H8N6O4} & 1 \\
+ 625 & \ce{H} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} & 1 \\
+ 626 & \ce{H} + \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2HN3O4} & 1 \\
+ 627 & \ce{H} + \ce{C2H3N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 628 & \ce{H} + \ce{C2HN3O4} $\to$ \ce{C2H2N3O4} & 1 \\
+ 629 & \ce{H} + \ce{C2HN3O4} $\to$ \ce{C2H2N3O4} & 1 \\
+ 630 & \ce{H} + \ce{NO2} $\to$ \ce{HNO2} & 1 \\
+ 631 & \ce{H2} + \ce{H2N} $\to$ \ce{H3N} + \ce{H} & 1 \\
+ 632 & \ce{H2N} + \ce{H2N} $\to$ \ce{H3N} + \ce{HN} & 2 \\
+ 633 & \ce{H2N} + \ce{H2N} $\to$ \ce{H4N2} & 10 \\
+ 634 & \ce{H2N} + \ce{C2H3N3O4} $\to$ \ce{C2H5N4O4} & 1 \\
+ 635 & \ce{H2N} + \ce{C2H2N3O3} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 636 & \ce{H2N} + \ce{C2H2N3} $\to$ \ce{C2H4N4} & 1 \\
+ 637 & \ce{H2N} + \ce{C2H2N3O} $\to$ \ce{C2H4N4O} & 1 \\
+ 638 & \ce{H2N} + \ce{C2H2N3O4} $\to$ \ce{H3N} + \ce{C2HN3O4} & 2 \\
+ 639 & \ce{H2N} + \ce{C2H2N3O4} $\to$ \ce{C2H4N4O4} & 3 \\
+ 640 & \ce{H2N} + \ce{C2H2N3O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 641 & \ce{H2N} + \ce{C2H2N2} $\to$ \ce{C2H4N3} & 0 \\
+ 642 & \ce{H2N} + \ce{C2N2O} $\to$ \ce{C2H2N3O} & 1 \\
+ 643 & \ce{H2N} + \ce{NO} $\to$ \ce{H2N2O} & 3 \\
+ 644 & \ce{H2N} + \ce{C3H3N5O5} $\to$ \ce{CH2N2O} + \ce{C2H3N4O4} & 1 \\
+ 645 & \ce{H2N} + \ce{C2HNO} $\to$ \ce{C2H3N2O} & 1 \\
+ 646 & \ce{H2N} + \ce{HO} $\to$ \ce{H3NO} & 7 \\
+ 647 & \ce{H2N} + \ce{HO} $\to$ \ce{H2O} + \ce{HN} & 1 \\
+ 648 & \ce{H2N} + \ce{CNO} $\to$ \ce{CH2N2O} & 2 \\
+ 649 & \ce{H2N} + \ce{C2H4N3O3} $\to$ \ce{C2H6N4O3} & 1 \\
+ 650 & \ce{H2N} + \ce{C2H4N3O2} $\to$ \ce{C2H6N4O2} & 1 \\
+ 651 & \ce{H2N} + \ce{C2H3N3O2} $\to$ \ce{H3N} + \ce{H2N} + \ce{C2N2O2} & 1 \\
+ 652 & \ce{H2N} + \ce{C2H3N3O2} $\to$ \ce{C2H5N4O2} & 1 \\
+ 653 & \ce{H2N} + \ce{C2H3N3O2} $\to$ \ce{H2NO} + \ce{C2H3N3O} & 1 \\
+ 654 & \ce{H2N} + \ce{C2H3N3O2} $\to$ \ce{H3N} + \ce{C2H2N3O2} & 1 \\
+ 655 & \ce{H2N} + \ce{C2H3N3O2} $\to$ \ce{C2H5N4O2} & 1 \\
+ 656 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2H3N4O4} & 1 \\
+ 657 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2H3N4O4} & 5 \\
+ 658 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{H4N2} + \ce{C2H2N3O4} & 2 \\
+ 659 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{H4N2} + \ce{C2H2N3O4} & 1 \\
+ 660 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{C2H5N5O4} + \ce{H} & 1 \\
+ 661 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{C2H6N5O4} & 1 \\
+ 662 & \ce{H2N} + \ce{C2H4N4O4} $\to$ \ce{C2H6N5O4} & 0 \\
+ 663 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2H2N4O4} & 1 \\
+ 664 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2H2N4O4} & 0 \\
+ 665 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2H2N3O2} + \ce{NO2} & 1 \\
+ 666 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{C2H5N4O2} + \ce{NO2} & 1 \\
+ 667 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{C2H5N5O4} & 2 \\
+ 668 & \ce{H2N} + \ce{C4H6N7O8} $\to$ \ce{C4H8N8O8} & 1 \\
+ 669 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{H3N} + \ce{C2H2N4O4} & 1 \\
+ 670 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{H4N2} + \ce{C2HN3O4} & 1 \\
+ 671 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{C2H5N5O4} & 1 \\
+ 672 & \ce{H2N} + \ce{C2H3N4O4} $\to$ \ce{C2H5N5O4} & 1 \\
+ 673 & \ce{H2N} + \ce{C2HN3O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 674 & \ce{H2N} + \ce{C2HN3O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 675 & \ce{H2N} + \ce{C2HN2O3} $\to$ \ce{C2H3N3O3} & 0 \\
+ 676 & \ce{H2N} + \ce{C2N3O4} $\to$ \ce{C2H2N4O4} & 0 \\
+ 677 & \ce{H2N} + \ce{C2H2N4O3} $\to$ \ce{C2H4N5O3} & 1 \\
+ 678 & \ce{H2N} + \ce{C2H2N4O3} $\to$ \ce{C2H4N4O} + \ce{NO2} & 1 \\
+ 679 & \ce{H2N} + \ce{C2H4N3O2} $\to$ \ce{H3N} + \ce{C2H3N3O2} & 2 \\
+ 680 & \ce{H2N} + \ce{C2H4N3O2} $\to$ \ce{H2NO} + \ce{C2H4N3O} & 1 \\
+ 681 & \ce{H2N} + \ce{C2HN2O2} $\to$ \ce{H3N} + \ce{C2N2O2} & 2 \\
+ 682 & \ce{H2N} + \ce{C2HN2O2} $\to$ \ce{C2H2N3O2} + \ce{H} & 1 \\
+ 683 & \ce{H2N} + \ce{C2HN2O2} $\to$ \ce{C2H3N3O2} & 0 \\
+ 684 & \ce{H2N} + \ce{C2HN2O2} $\to$ \ce{H2NO} + \ce{C2HN2O} & 1 \\
+ 685 & \ce{H2N} + \ce{C2HN2O2} $\to$ \ce{C2H3N3O2} & 1 \\
+ 686 & \ce{H2N} + \ce{C2N2O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 687 & \ce{H2N} + \ce{C2N2O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 688 & \ce{H2N} + \ce{C2H4N3O} $\to$ \ce{H2NO} + \ce{C2H4N3} & 1 \\
+ 689 & \ce{H2N} + \ce{NO2} $\to$ \ce{H2N2O2} & 1 \\
+ 690 & \ce{H2N} + \ce{NO2} $\to$ \ce{H2NO} + \ce{NO} & 3 \\
+ 691 & \ce{HN} + \ce{NO} $\to$ \ce{HN2O} & 1 \\
+ 692 & \ce{HN} + \ce{C2HN3O4} $\to$ \ce{C2H2N4O4} & 1 \\
+ 693 & \ce{HN} + \ce{C2H4N3O2} $\to$ \ce{C2H5N4O2} & 1 \\
+ 694 & \ce{HN} + \ce{C2H4N3O2} $\to$ \ce{H2N} + \ce{C2H3N3O2} & 1 \\
+ 695 & \ce{C2H3N3O5} $\to$ \ce{C2H2N3O4} + \ce{HO} & 1 \\
+ 696 & \ce{C2H2N3O5} $\to$ \ce{C2H2N2O3} + \ce{NO2} & 1 \\
+ 697 & \ce{C2H3N3O5} $\to$ \ce{C2H2N2O2} + \ce{HO} + \ce{NO2} & 1 \\
+ 698 & \ce{C2H4N4O} $\to$ \ce{C2HN2O} + \ce{H3N2} & 1 \\
+ 699 & \ce{C2H3N3O2} $\to$ \ce{C2HN2O} + \ce{H2NO} & 1 \\
+ 700 & \ce{C2H3N3O2} $\to$ \ce{C2H2N3O} + \ce{HO} & 0 \\
+ 701 & \ce{C2H4N4O} $\to$ \ce{C2HN2O} + \ce{H3N2} & 1 \\
+ 702 & \ce{C2H3N4O2} $\to$ \ce{HNO} + \ce{C2H2N3O} & 1 \\
+ 703 & \ce{C2H3N3O2} $\to$ \ce{C2H2N3O} + \ce{HO} & 0 \\
+ 704 & \ce{C2H3N2O3} $\to$ \ce{C2H2N2O2} + \ce{HO} & 1 \\
+ 705 & \ce{C2H4N4O} $\to$ \ce{C2H4N4O} & 1 \\
+ 706 & \ce{C2H3N3O2} $\to$ \ce{C2H3N3O2} & 1 \\
+ 707 & \ce{C2H3N3O2} $\to$ \ce{C2H2N3O} + \ce{HO} & 1 \\
+ 708 & \ce{C2H3N3O2} $\to$ \ce{C2H3N3O2} & 0 \\
+ 709 & \ce{C2H2N2O2} + \ce{HO} $\to$ \ce{C2H3N2O3} & 1 \\
+ 710 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 1 \\
+ 711 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 1 \\
+ 712 & \ce{C2H2N2O2} $\to$ \ce{C2H2NO} + \ce{NO} & 2 \\
+ 713 & \ce{C2H3N2O2} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H2N2O} + \ce{C2H3N4O4} & 1 \\
+ 714 & \ce{C2H2N2O2} + \ce{NO2} $\to$ \ce{C2H2N3O4} & 1 \\
+ 715 & \ce{C2H2N2O2} $\to$ \ce{C2H2N2O2} & 3 \\
+ 716 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 1 \\
+ 717 & \ce{C2H2N2O} $\to$ \ce{C2H2N2O} & 1 \\
+ 718 & \ce{C2H2N2O} $\to$ \ce{C2N2O} + \ce{H2} & 1 \\
+ 719 & \ce{C2HN2O} + \ce{NO} $\to$ \ce{C2HN3O2} & 0 \\
+ 720 & \ce{C2HN2O} + \ce{HO} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2HN2O2} & 1 \\
+ 721 & \ce{C2HN2O} + \ce{HO} $\to$ \ce{C2HN2} + \ce{HO2} & 1 \\
+ 722 & \ce{C2HN2O} + \ce{HO} $\to$ \ce{H2O} + \ce{C2N2O} & 2 \\
+ 723 & \ce{C2HN2O} + \ce{C2N2O2} $\to$ \ce{C2HN2O2} + \ce{C2N2O} & 1 \\
+ 724 & \ce{C2HN2O} + \ce{NO2} $\to$ \ce{C2HN3O3} & 1 \\
+ 725 & \ce{C2HN2O} $\to$ \ce{C2N2O} + \ce{H} & 0 \\
+ 726 & \ce{C2H2NO} $\to$ \ce{C2H2NO} & 1 \\
+ 727 & \ce{C2HN3O5} $\to$ \ce{C2HN3O5} & 1 \\
+ 728 & \ce{C2H2N3O2} $\to$ \ce{C2H2N2O} + \ce{NO} & 1 \\
+ 729 & \ce{C2H2N3} + \ce{HO} $\to$ \ce{C2H3N3O} & 1 \\
+ 730 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 731 & \ce{C2H2N3O} + \ce{NO} $\to$ \ce{C2H2N4O2} & 1 \\
+ 732 & \ce{C2H2N3O} + \ce{HO} $\to$ \ce{C2H3N3O2} & 1 \\
+ 733 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 2 \\
+ 734 & \ce{C2H4N3O} $\to$ \ce{C2H3N3} + \ce{HO} & 1 \\
+ 735 & \ce{C2H2N3O} $\to$ \ce{CH2N2} + \ce{CNO} & 1 \\
+ 736 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 737 & \ce{C2HN4O3} $\to$ \ce{C2HN4O3} & 1 \\
+ 738 & \ce{C2HN2O2} $\to$ \ce{C2HNO} + \ce{NO} & 1 \\
+ 739 & \ce{C2H2N3O4} + \ce{HO} + \ce{C2H4N3O} $\to$ \ce{C2H3N3O4} + \ce{C2H4N3O2} & 1 \\
+ 740 & \ce{C2H2N3O4} $\to$ \ce{C2H2N2O2} + \ce{NO2} & 1 \\
+ 741 & \ce{C2H2N3O4} $\to$ \ce{C2H2N3O4} & 0 \\
+ 742 & \ce{C2H3N2O} $\to$ \ce{C2H2N2} + \ce{HO} & 1 \\
+ 743 & \ce{C2H2NO} $\to$ \ce{C2H2NO} & 0 \\
+ 744 & \ce{C2H2N2} + \ce{HO} $\to$ \ce{C2H3N2O} & 1 \\
+ 745 & \ce{C2H2N4O3} $\to$ \ce{HNO2} + \ce{C2HN3O} & 1 \\
+ 746 & \ce{C2HN3O} $\to$ \ce{C2HN3O} & 1 \\
+ 747 & \ce{C2H5N5O4} $\to$ \ce{HNO} + \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 748 & \ce{C2H4N3O} + \ce{HO} $\to$ \ce{C2H5N3O2} & 1 \\
+ 749 & \ce{C2H4N3O} $\to$ \ce{C2H4N3O} & 1 \\
+ 750 & \ce{C2H4N3O} $\to$ \ce{CH3N2} + \ce{CHNO} & 1 \\
+ 751 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 1 \\
+ 752 & \ce{C2N2O} $\to$ \ce{C2N2O} & 1 \\
+ 753 & \ce{C4H3N6O4} + \ce{HO} $\to$ \ce{C4H4N5O3} + \ce{NO2} & 1 \\
+ 754 & \ce{C2H4N3} $\to$ \ce{C2H2N2} + \ce{H2N} & 1 \\
+ 755 & \ce{C4H3N5O2} $\to$ \ce{C4H3N5O2} & 1 \\
+ 756 & \ce{C2H3N3} + \ce{HO} $\to$ \ce{H2O} + \ce{C2H2N3} & 2 \\
+ 757 & \ce{C2H3N3} + \ce{HO} $\to$ \ce{C2H4N3O} & 1 \\
+ 758 & \ce{C2H2N3} $\to$ \ce{C2N2} + \ce{H2N} & 1 \\
+ 759 & \ce{C2H2N3} $\to$ \ce{C2H2N3} & 1 \\
+ 760 & \ce{C4H4N3} $\to$ \ce{C4H4N3} & 1 \\
+ 761 & \ce{C3N4O2} $\to$ \ce{C3N3} + \ce{NO2} & 1 \\
+ 762 & \ce{C2N2O} $\to$ \ce{C2N2O} & 1 \\
+ 763 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 1 \\
+ 764 & \ce{C2HN3O5} $\to$ \ce{CHN} + \ce{CN2O5} & 1 \\
+ 765 & \ce{C2H2NO} $\to$ \ce{CHN} + \ce{CHO} & 1 \\
+ 766 & \ce{C2HN4O4} $\to$ \ce{N2} + \ce{C2HN2O4} & 1 \\
+ 767 & \ce{NO} + \ce{NO} $\to$ \ce{N2O2} & 1 \\
+ 768 & \ce{NO} + \ce{HO} $\to$ \ce{HNO2} & 1 \\
+ 769 & \ce{NO} + \ce{C2H4N4O4} $\to$ \ce{C2H3N5O5} + \ce{H} & 1 \\
+ 770 & \ce{NO} + \ce{C2H3N4O4} $\to$ \ce{H2N2O} + \ce{C2HN3O4} & 1 \\
+ 771 & \ce{NO} + \ce{C2HN3O4} $\to$ \ce{HNO} + \ce{C2N3O4} & 1 \\
+ 772 & \ce{NO} + \ce{C2H4N3O2} $\to$ \ce{C2H2N} + \ce{H2N2O} + \ce{NO2} & 1 \\
+ 773 & \ce{NO} + \ce{C2H4N3O2} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 774 & \ce{NO} + \ce{C2HN2O2} $\to$ \ce{HNO} + \ce{C2N2O2} & 1 \\
+ 775 & \ce{C2H4N3O} $\to$ \ce{H2N} + \ce{C2H2N2O} & 1 \\
+ 776 & \ce{CN2O2} $\to$ \ce{CN} + \ce{NO2} & 1 \\
+ 777 & \ce{CN2} + \ce{C2N2O2} $\to$ \ce{C3N4O2} & 1 \\
+ 778 & \ce{C2HN3O4} $\to$ \ce{C2HN3O4} & 1 \\
+ 779 & \ce{C2HNO} $\to$ \ce{CHN} + \ce{CO} & 1 \\
+ 780 & \ce{CH2N2} $\to$ \ce{CN} + \ce{H2N} & 1 \\
+ 781 & \ce{HNO} + \ce{C2N3O2} $\to$ \ce{CHN2O} + \ce{CN2O2} & 1 \\
+ 782 & \ce{HO} + \ce{C2H3N4O2} $\to$ \ce{C2H4N3O} + \ce{NO2} & 1 \\
+ 783 & \ce{HO} + \ce{C2HN4O2} $\to$ \ce{CHN2} + \ce{CHN2O3} & 1 \\
+ 784 & \ce{HO} + \ce{C2H4N4O4} + \ce{C2H4N3O2} $\to$ \ce{H2O} + \ce{C2H4N3O2} + \ce{C2H3N4O4} & 1 \\
+ 785 & \ce{HO} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N3O2} + \ce{NO2} & 1 \\
+ 786 & \ce{HO} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O4} & 5 \\
+ 787 & \ce{HO} + \ce{C2H4N4O4} $\to$ \ce{H2O} + \ce{C2H3N4O4} & 8 \\
+ 788 & \ce{HO} + \ce{C2H4N4O4} $\to$ \ce{HNO3} + \ce{C2H4N3O2} & 1 \\
+ 789 & \ce{HO} + \ce{C2H4N4O4} $\to$ \ce{C2H5N3O3} + \ce{NO2} & 1 \\
+ 790 & \ce{HO} + \ce{C2H3N4O4} $\to$ \ce{H2O} + \ce{C2H2N4O4} & 1 \\
+ 791 & \ce{HO} + \ce{C2HN3O4} $\to$ \ce{H2O} + \ce{C2N3O4} & 1 \\
+ 792 & \ce{HO} + \ce{C2HN4O2} $\to$ \ce{C2H2N4O3} & 1 \\
+ 793 & \ce{HO} + \ce{C2H4N4O5} $\to$ \ce{H2O} + \ce{C2H3N4O5} & 1 \\
+ 794 & \ce{HO} + \ce{C2H3N4O3} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 795 & \ce{HO} + \ce{C2H3N4O3} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 796 & \ce{HO} + \ce{C2H4N3O2} $\to$ \ce{C2H3N2O3} + \ce{H2N} & 1 \\
+ 797 & \ce{HO} + \ce{C2H4N3O2} $\to$ \ce{H2O} + \ce{C2H3N3O2} & 1 \\
+ 798 & \ce{HO} + \ce{C2H4N3O2} $\to$ \ce{H2O} + \ce{C2H3N3O2} & 1 \\
+ 799 & \ce{HO} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O3} & 1 \\
+ 800 & \ce{HO} + \ce{C2HN2O2} $\to$ \ce{C2H2NO} + \ce{NO2} & 1 \\
+ 801 & \ce{HO} + \ce{C2HN2O2} $\to$ \ce{C2H2N2O3} & 1 \\
+ 802 & \ce{HO} + \ce{C2H3N4O3} $\to$ \ce{H2O} + \ce{C2H2N4O3} & 1 \\
+ 803 & \ce{HO} + \ce{NO2} $\to$ \ce{HNO3} & 2 \\
+ 804 & \ce{C2N2O2} $\to$ \ce{CN} + \ce{CNO2} & 1 \\
+ 805 & \ce{CNO} + \ce{C2H3N4O4} $\to$ \ce{C3H3N5O5} & 1 \\
+ 806 & \ce{C2HN2O2} $\to$ \ce{C2HN2O2} & 1 \\
+ 807 & \ce{C2N2O} $\to$ \ce{C2N2O} & 1 \\
+ 808 & \ce{C2H2N3O} $\to$ \ce{CH2N2} + \ce{CNO} & 2 \\
+ 809 & \ce{C2H2N3O} $\to$ \ce{C2H2N3O} & 1 \\
+ 810 & \ce{C2H2NO} $\to$ \ce{C2H2NO} & 1 \\
+ 811 & \ce{C2H3N3O2} $\to$ \ce{C2H3N3O2} & 1 \\
+ 812 & \ce{C2H3N3O2} $\to$ \ce{H2N} + \ce{C2HN2O2} & 1 \\
+ 813 & \ce{C2H3N3O2} + \ce{C2H4N4O4} $\to$ \ce{C2H3N4O4} + \ce{C2H4N3O2} & 1 \\
+ 814 & \ce{C2H3N3O2} + \ce{C2H4N3O2} $\to$ \ce{C4H7N6O4} & 1 \\
+ 815 & \ce{C2H3N3O2} $\to$ \ce{C2H3N3O2} & 1 \\
+ 816 & \ce{C2HN2O4} $\to$ \ce{C2HNO2} + \ce{NO2} & 1 \\
+ 817 & \ce{C4H6N7O5} $\to$ \ce{C4H6N7O5} & 1 \\
+ 818 & \ce{C4H8N8O8} $\to$ \ce{C2H2N3O5} + \ce{C2H4N4O3} + \ce{H2N} & 1 \\
+ 819 & \ce{C4H8N8O8} $\to$ \ce{C2H4N4O3} + \ce{C2H4N4O5} & 2 \\
+ 820 & \ce{C4H8N8O8} $\to$ \ce{C2H4N4O3} + \ce{C2H4N4O5} & 1 \\
+ 821 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{H3N} + \ce{C2H2N3O4} + \ce{C2H3N4O4} & 1 \\
+ 822 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H3N4O4} & 1 \\
+ 823 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H4N4O3} + \ce{C2H4N4O5} & 1 \\
+ 824 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H3N4O4} & 2 \\
+ 825 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C2H5N4O4} + \ce{C2H3N4O4} & 2 \\
+ 826 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{H2N} + \ce{C4H6N7O8} & 1 \\
+ 827 & \ce{C2H4N4O4} + \ce{C2H4N4O4} $\to$ \ce{C4H8N8O8} & 4 \\
+ 828 & \ce{C2H4N4O4} + \ce{C2H3N4O4} $\to$ \ce{C2H4N4O4} + \ce{C2H3N4O4} & 1 \\
+ 829 & \ce{C2H4N4O4} + \ce{C2H3N4O4} $\to$ \ce{C4H7N8O8} & 1 \\
+ 830 & \ce{C2H4N4O4} + \ce{C2N3O4} $\to$ \ce{C2HN3O4} + \ce{C2H3N4O4} & 1 \\
+ 831 & \ce{C2H4N4O4} + \ce{C2H4N3O2} $\to$ \ce{C4H8N7O6} & 1 \\
+ 832 & \ce{C2H4N4O4} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2H3N3O2} + \ce{NO2} & 1 \\
+ 833 & \ce{C2H4N4O4} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2H3N4O4} & 2 \\
+ 834 & \ce{C2H4N4O4} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2H3N4O4} & 2 \\
+ 835 & \ce{C2H4N4O4} + \ce{C2H2N3O2} $\to$ \ce{C2H3N3O2} + \ce{C2H3N4O4} & 1 \\
+ 836 & \ce{C2H4N4O4} + \ce{C2HN2O2} $\to$ \ce{C2H5N4O4} + \ce{C2N2O2} & 1 \\
+ 837 & \ce{C2H4N4O4} + \ce{C2HN2O2} $\to$ \ce{C2H2N2O2} + \ce{C2H3N4O4} & 1 \\
+ 838 & \ce{C2H4N4O4} + \ce{HN2O} $\to$ \ce{HN2} + \ce{C2H4N4O5} & 1 \\
+ 839 & \ce{C2H4N4O4} + \ce{NO2} $\to$ \ce{C2H4N5O6} & 1 \\
+ 840 & \ce{C2H4N4O4} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2H3N4O4} & 1 \\
+ 841 & \ce{C2H4N4O4} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2H3N4O4} & 1 \\
+ 842 & \ce{C2H4N4O4} + \ce{NO2} $\to$ \ce{C2H3N4O4} + \ce{HNO2} & 1 \\
+ 843 & \ce{C2H4N4O4} $\to$ \ce{C2H2N2O2} + \ce{H2N} + \ce{NO2} & 1 \\
+ 844 & \ce{C2H4N4O4} $\to$ \ce{C2H4N2} + \ce{NO2} + \ce{NO2} & 2 \\
+ 845 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 9 \\
+ 846 & \ce{C2H4N4O4} $\to$ \ce{C2H3N3O4} + \ce{HN} & 1 \\
+ 847 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 848 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 1 \\
+ 849 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 32 \\
+ 850 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 8 \\
+ 851 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 14 \\
+ 852 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 16 \\
+ 853 & \ce{C2H4N4O4} $\to$ \ce{C2H4N4O4} & 12 \\
+ 854 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 1 \\
+ 855 & \ce{C2H4N4O4} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 1 \\
+ 856 & \ce{C2H4N4O4} $\to$ \ce{H} + \ce{C2H3N4O4} & 1 \\
+ 857 & \ce{C2H4N4O4} $\to$ \ce{H2N} + \ce{C2H2N3O4} & 5 \\
+ 858 & \ce{C2H4N4O4} $\to$ \ce{NO} + \ce{C2H4N3O3} & 1 \\
+ 859 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 76 \\
+ 860 & \ce{C2H4N4O4} $\to$ \ce{C2H4N3O2} + \ce{NO2} & 2 \\
+ 861 & \ce{C2H5N3O3} + \ce{NO2} $\to$ \ce{C2H5N4O5} & 1 \\
+ 862 & \ce{C2H5N4O2} $\to$ \ce{C2H5N3} + \ce{NO2} & 1 \\
+ 863 & \ce{C2H4N4O2} + \ce{C2H4N3O4} $\to$ \ce{C4H8N7O6} & 0 \\
+ 864 & \ce{C2H4N4O2} $\to$ \ce{C2H4N3} + \ce{NO2} & 1 \\
+ 865 & \ce{C4H8N8O8} $\to$ \ce{C4H8N7O6} + \ce{NO2} & 1 \\
+ 866 & \ce{C2H4N3O3} + \ce{NO2} $\to$ \ce{C2H4N4O5} & 0 \\
+ 867 & \ce{C2H4N3O3} $\to$ \ce{C2H4N2O} + \ce{NO2} & 3 \\
+ 868 & \ce{C2H4N3O3} $\to$ \ce{C2H4N3O3} & 0 \\
+ 869 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 870 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 871 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 2 \\
+ 872 & \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2HN3O4} & 3 \\
+ 873 & \ce{C2H3N4O4} $\to$ \ce{C2H3N3O2} + \ce{NO2} & 2 \\
+ 874 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 875 & \ce{C2H2N4O4} $\to$ \ce{H2N} + \ce{C2N3O4} & 1 \\
+ 876 & \ce{C4H7N8O8} $\to$ \ce{C4H7N7O6} + \ce{NO2} & 1 \\
+ 877 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 878 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 879 & \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2HN3O4} & 11 \\
+ 880 & \ce{C2H3N4O4} $\to$ \ce{H2N} + \ce{C2HN2O2} + \ce{NO2} & 2 \\
+ 881 & \ce{C2H3N4O4} $\to$ \ce{C2H3N3O2} + \ce{NO2} & 3 \\
+ 882 & \ce{C2H2N4O4} $\to$ \ce{C2H2N4O4} & 1 \\
+ 883 & \ce{C2H2N4O4} $\to$ \ce{H2N} + \ce{C2N3O4} & 1 \\
+ 884 & \ce{C2HN3O4} + \ce{C2H4N3O2} $\to$ \ce{C2H5N3O2} + \ce{C2N3O4} & 1 \\
+ 885 & \ce{C2HN3O4} + \ce{NO2} $\to$ \ce{C2HN3O5} + \ce{NO} & 1 \\
+ 886 & \ce{C2HN3O4} $\to$ \ce{C2HN2O2} + \ce{NO2} & 17 \\
+ 887 & \ce{C2H3N3O2} + \ce{NO2} $\to$ \ce{H2N} + \ce{C2HN3O4} & 1 \\
+ 888 & \ce{C2H3N3O2} $\to$ \ce{C2H3N2} + \ce{NO2} & 1 \\
+ 889 & \ce{C2H2N3O4} $\to$ \ce{C2HN3O3} + \ce{HO} & 1 \\
+ 890 & \ce{C2H2N2O3} + \ce{NO2} $\to$ \ce{C2H2N3O5} & 0 \\
+ 891 & \ce{C2H2N2O3} $\to$ \ce{C2H2NO} + \ce{NO2} & 2 \\
+ 892 & \ce{C2HN2O3} $\to$ \ce{C2HNO} + \ce{NO2} & 3 \\
+ 893 & \ce{C2N3O4} $\to$ \ce{C2N} + \ce{NO2} + \ce{NO2} & 1 \\
+ 894 & \ce{C2H2N3O2} $\to$ \ce{C2H2N2} + \ce{NO2} & 1 \\
+ 895 & \ce{C4H4N6O5} $\to$ \ce{C4H4N6O5} & 1 \\
+ 896 & \ce{C4H4N6O5} $\to$ \ce{C4H3N6O5} + \ce{H} & 1 \\
+ 897 & \ce{C2H4N3O4} $\to$ \ce{C2H4N3O4} & 1 \\
+ 898 & \ce{C2HN2O4} + \ce{NO2} $\to$ \ce{C2HN3O6} & 1 \\
+ 899 & \ce{C2HN2O4} $\to$ \ce{C2HNO2} + \ce{NO2} & 1 \\
+ 900 & \ce{C2H3N4O5} $\to$ \ce{C2H3N4O5} & 1 \\
+ 901 & \ce{C2H4N4O5} $\to$ \ce{H2N} + \ce{C2H2N2O3} + \ce{NO2} & 1 \\
+ 902 & \ce{C2H4N4O5} $\to$ \ce{C2H4N3O3} + \ce{NO2} & 1 \\
+ 903 & \ce{C2H3N4O5} $\to$ \ce{H2N} + \ce{C2HN3O5} & 1 \\
+ 904 & \ce{C2H3N4O5} $\to$ \ce{C2H3N4O5} & 0 \\
+ 905 & \ce{C2HN3O5} $\to$ \ce{C2HN2O3} + \ce{NO2} & 1 \\
+ 906 & \ce{C2HN3O5} $\to$ \ce{C2HN2O3} + \ce{NO2} & 1 \\
+ 907 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 908 & \ce{C2H2N2O3} + \ce{NO2} $\to$ \ce{C2H2N3O5} & 0 \\
+ 909 & \ce{C2H2N2O3} $\to$ \ce{C2H2NO} + \ce{NO2} & 1 \\
+ 910 & \ce{C2H2N2O3} $\to$ \ce{C2H2N2O3} & 1 \\
+ 911 & \ce{C2HN2O3} + \ce{NO2} $\to$ \ce{C2HN3O5} & 1 \\
+ 912 & \ce{C2HN2O3} $\to$ \ce{C2HN2O3} & 2 \\
+ 913 & \ce{C2HN3O6} $\to$ \ce{C2HN2O4} + \ce{NO2} & 1 \\
+ 914 & \ce{C4H7N6O4} $\to$ \ce{H2N} + \ce{C2HN2O3} + \ce{C2H4N3O} & 1 \\
+ 915 & \ce{C4H7N6O4} $\to$ \ce{C4H7N6O4} & 1 \\
+ 916 & \ce{C2H4N4O4} $\to$ \ce{C2H3N4O3} + \ce{HO} & 1 \\
+ 917 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 918 & \ce{C2H3N4O3} $\to$ \ce{C2H3N3O} + \ce{NO2} & 1 \\
+ 919 & \ce{C2H3N4O3} $\to$ \ce{C2H3N4O3} & 1 \\
+ 920 & \ce{C2H3N4O3} $\to$ \ce{C2HN3O3} + \ce{H2N} & 1 \\
+ 921 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 922 & \ce{C2H2N4O3} $\to$ \ce{C2H2N4O3} & 1 \\
+ 923 & \ce{C2H2N4O4} $\to$ \ce{C2H2N4O4} & 1 \\
+ 924 & \ce{C2H4N3O4} $\to$ \ce{C2H4N2O2} + \ce{NO2} & 1 \\
+ 925 & \ce{C2H5N4O5} $\to$ \ce{C2H3N3O5} + \ce{H2N} & 1 \\
+ 926 & \ce{C2H4N4O5} $\to$ \ce{C2H2N3O5} + \ce{H2N} & 3 \\
+ 927 & \ce{C2H4N4O5} $\to$ \ce{C2H4N4O5} & 3 \\
+ 928 & \ce{C2HN2O3} $\to$ \ce{C2HN2O3} & 1 \\
+ 929 & \ce{C2H3N4O4} $\to$ \ce{C2H3N4O4} & 1 \\
+ 930 & \ce{C2H4N3O2} + \ce{C2H4N3O2} $\to$ \ce{H} + \ce{C4H7N6O4} & 1 \\
+ 931 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H2N3O4} + \ce{H2N} & 5 \\
+ 932 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H3N4O3} + \ce{HO} & 1 \\
+ 933 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 1 \\
+ 934 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 1 \\
+ 935 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{HNO2} + \ce{C2H3N3O2} & 1 \\
+ 936 & \ce{C2H4N3O2} $\to$ \ce{C2H2N2O2} + \ce{H2N} & 24 \\
+ 937 & \ce{C2H4N3O2} $\to$ \ce{C2H4N2O} + \ce{NO} & 1 \\
+ 938 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 2 \\
+ 939 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 2 \\
+ 940 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 5 \\
+ 941 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 942 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 6 \\
+ 943 & \ce{C2H2N3O2} + \ce{NO2} $\to$ \ce{C2H2N4O4} & 0 \\
+ 944 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 945 & \ce{C2HN2O2} + \ce{C2HN2O2} $\to$ \ce{C2H2N2O2} + \ce{C2N2O2} & 1 \\
+ 946 & \ce{C2HN2O2} $\to$ \ce{C2HN} + \ce{NO2} & 2 \\
+ 947 & \ce{C2HN2O2} $\to$ \ce{C2HN2O2} & 2 \\
+ 948 & \ce{C2N2O2} $\to$ \ce{C2N2O2} & 1 \\
+ 949 & \ce{C2N2O2} $\to$ \ce{C2N2O2} & 3 \\
+ 950 & \ce{C4H8N6O4} $\to$ \ce{C2H3N2O2} + \ce{C2H5N4O2} & 1 \\
+ 951 & \ce{C2H3N3O2} $\to$ \ce{C2H3N2O} + \ce{NO} & 2 \\
+ 952 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 1 \\
+ 953 & \ce{C2H4N3O2} $\to$ \ce{C2H4N2O} + \ce{NO} & 4 \\
+ 954 & \ce{C2H4N3O2} $\to$ \ce{C2H4N3O2} & 3 \\
+ 955 & \ce{C2H2N3O2} $\to$ \ce{C2H2N3O2} & 1 \\
+ 956 & \ce{C2HN2O2} $\to$ \ce{C2HN2O2} & 2 \\
+ 957 & \ce{C2N2O2} $\to$ \ce{C2N2O2} & 1 \\
+ 958 & \ce{C2N2O2} $\to$ \ce{C2NO} + \ce{NO} & 2 \\
+ 959 & \ce{C2H4N3O} + \ce{NO2} $\to$ \ce{C2H3N3O} + \ce{HNO2} & 1 \\
+ 960 & \ce{C2H4N3O} $\to$ \ce{C2H4N3O} & 7 \\
+ 961 & \ce{C2H4N3O} $\to$ \ce{C2H3N3O} + \ce{H} & 1 \\
+ 962 & \ce{C2H3N4O} $\to$ \ce{C2H3N4O} & 1 \\
+ 963 & \ce{C4H5N6O2} $\to$ \ce{C4H5N6O2} & 1 \\
+ 964 & \ce{C2H4N3O2} + \ce{NO2} $\to$ \ce{C2H4N4O4} & 0 \\
+ 965 & \ce{C2H4N3O2} $\to$ \ce{C2H3N3O} + \ce{HO} & 1 \\
+ 966 & \ce{NO2} + \ce{NO2} $\to$ \ce{N2O4} & 1 \\
+ 967 & \ce{NO2} + \ce{NO2} $\to$ \ce{NO} + \ce{NO3} & 1 \\
+ 968 & \ce{NO2} + \ce{HNO2} $\to$ \ce{HNO2} + \ce{NO2} & 1 \\
+ 969 & \ce{HNO2} $\to$ \ce{HNO} + \ce{O} & 1 \\
+ \hline
+\end{longtable}
+%\end{document}

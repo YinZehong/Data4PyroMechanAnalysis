@@ -1,0 +1,15 @@
+Info) ------------
+Info) molecule id: 0
+Info) trajectory frame: 1
+Info) name: N
+Info) type: N
+Info) index: 4532
+Info) residue: 205
+Info) resname:
+Info) resid: 1
+Info) chain: X
+Info) segname:
+Info) x: 58.971996
+Info) y: 55.197998
+Info) z: 35.898998
+Info) User Pick: mol0 atom:4532

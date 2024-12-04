@@ -1,0 +1,104 @@
+log		name.lammps.log
+units		real
+
+
+atom_style	full
+boundary	p p p
+
+read_data		221-TNT-Stru.data
+
+
+pair_style	reax/c LMP_CONTROL lgvdw yes safezone 1.6 mincap 100
+pair_coeff	* * 2014-TNT-ffield.reax.lgv2  C N O H
+
+neighbor	2 bin
+neigh_modify	every 10 delay 0 check yes
+
+compute		reax all pair reax/c
+
+variable eb      equal c_reax[1]
+variable ea      equal c_reax[2]
+variable elp     equal c_reax[3]
+variable emol    equal c_reax[4]
+variable ev      equal c_reax[5]
+variable epen    equal c_reax[6]
+variable ecoa    equal c_reax[7]
+variable ehb     equal c_reax[8]
+variable et      equal c_reax[9]
+variable eco     equal c_reax[10]
+variable ew      equal c_reax[11]
+variable ep      equal c_reax[12]
+variable efi     equal c_reax[13]
+variable eqeq    equal c_reax[14]
+
+
+
+
+variable         vmass atom mass
+compute          mass all reduce sum v_vmass    
+
+
+
+variable         vvx atom vx
+variable         vvy atom vy
+variable         vvz atom vz
+variable         vv atom sqrt(v_vvx*v_vvx+v_vvy*v_vvy+v_vvz*v_vvz)
+variable	keatom atom 1.0e4*(0.5/4.184)*v_vmass*v_vv*v_vv
+compute       vatom all reduce ave v_vv
+compute       eatom all reduce sum v_keatom
+
+
+compute		KE all ke/atom
+variable		temp atom c_KE/0.00298
+variable		allte equal (c_eatom/0.00298)/2592
+
+
+
+
+
+
+
+fix		1 all  qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+thermo		1000
+thermo_style	custom step temp epair etotal ecoul evdwl pe ke press pxx pyy pzz lx ly lz cella cellb cellc cellalpha cellbeta cellgamma vol density c_mass
+
+min_style        cg        						
+minimize         1.0e-5 1.0e-7 50000 50000        				
+reset_timestep   0  
+
+
+dump		2d all dcd 1000 dump.dcd
+dump		2a all atom 1000 dump.atom
+dump		2c all custom 1000 dump.custom id type xu yu zu vx vy vz v_vv v_temp
+
+
+fix		3 all reax/c/species 10 50 1000 species.out  cutoff 1 1 0.55   cutoff 1 2 0.3  cutoff 1 4 0.4   cutoff 1 3 0.65  cutoff 2 2 0.55  cutoff 2 4 0.55  cutoff 2 3 0.4  cutoff 4 4 0.55  cutoff 3 4 0.4  cutoff 3 3 0.65  position 1000 CNOHspecies.pos element C N O H
+fix		4 all reax/c/bonds 1000 bondorder.bof
+
+compute		MSD all msd
+fix		savemsd all ave/time 10 10 100 c_MSD[1] c_MSD[2] c_MSD[3] c_MSD[4] file MSD.data mode scalar
+compute		RDF all rdf 500 cutoff 5
+fix		saverdf all ave/time 100 10 1000 c_RDF[1] c_RDF[2] c_RDF[3] file RDF.data mode vector
+ 
+
+velocity	all create 300 4843634
+
+restart	10000 restart.*.dat
+
+timestep	0.25
+
+
+fix		MD21 all npt temp 300 300 25 tri 1 1 250 
+run		80000
+unfix		MD21
+
+
+
+
+
+write_data	  	Output.out
+
+
+
+
